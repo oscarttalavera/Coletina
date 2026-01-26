@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html class="light" lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Coletina Repostería - Home Page</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ff9b8a",
+                        "background-light": "#f8f6f5",
+                        "background-dark": "#23120f",
+                        "cielo": "#C8BEC0",
+                        "purple-brand": "#5B5AA2"
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            font-family: "Plus Jakarta Sans", sans-serif;
+        }
+        .text-brand-purple {
+            color: #5B5AA2;
+        }
+        .bg-cielo-soft {
+            background-color: #f1efef;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-brand-purple">
+<!-- Top Navigation Bar -->
+<header class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-cielo/20 px-6 lg:px-40 py-4">
+    <div class="max-w-[1200px] mx-auto flex items-center justify-between">
+        <a href="index.html" class="flex items-center gap-3">
+            <div class="size-8 bg-primary rounded-full flex items-center justify-center text-white">
+                <span class="material-symbols-outlined">cake</span>
+            </div>
+            <h1 class="text-brand-purple text-xl font-extrabold tracking-tight">Coletina <span class="text-primary">Repostería</span></h1>
+        </a>
+        <nav class="hidden md:flex items-center gap-10">
+            <a class="text-brand-purple text-sm font-semibold hover:text-primary transition-colors" href="menu.html">Menú</a>
+            <a class="text-brand-purple text-sm font-semibold hover:text-primary transition-colors" href="about.html">Nosotros</a>
+<a class="text-brand-purple text-sm font-semibold hover:text-primary transition-colors" href="about.html#contact">Contacto</a>
+        </nav>
+        <a href="menu.html" class="bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-lg text-sm font-bold shadow-sm transition-all transform hover:scale-105">
+            Pide Ahora
+        </a>
+    </div>
+</header>
+<main class="flex flex-col">
+    <!-- Hero Section -->
+    <section class="px-6 lg:px-40 py-12 lg:py-20 bg-background-light dark:bg-background-dark">
+        <div class="max-w-[1200px] mx-auto flex flex-col lg:flex-row gap-12 items-center">
+            <!-- Image Left -->
+            <div class="w-full lg:w-1/2">
+                <div class="relative group">
+                    <div class="absolute -inset-2 bg-primary/20 rounded-xl blur-lg group-hover:bg-primary/30 transition duration-500"></div>
+                    <div class="relative w-full aspect-[4/3] bg-center bg-cover rounded-xl shadow-2xl" data-alt="Gourmet chocolate cake with elegant frosting decorations" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCv-Wde87rLdyERK-jsOsc5TQLHWnKXtwvVK-FC_A89H2XUPcrD1b6qoSeOtfQj2EXbOIGIR6CK0IHjnj7td2z-RX7lYCWZ3YU2E3uc4JdjPJIk3bnO2rCDJl8j8L-y8ESZDnNoTPS8xwAZ-xG5MVMwAQZIAut_CpPaoXug0XNC0yTdq_D7oV-8OE8f9dFdKBkI4Zm1Ihys8BkTSug06axbpTmhO4gcbwWSdA_U4-B1obD3-m-bKnP8xqF69mudTwZN8gf_8Wd22Dk");'>
+                    </div>
+                </div>
+            </div>
+            <!-- Content Right -->
+            <div class="w-full lg:w-1/2 flex flex-col gap-6">
+                <div class="flex flex-col gap-4">
+                    <span class="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-bold uppercase tracking-widest rounded-full w-fit">
+                        Arte en cada bocado
+                    </span>
+                    <h2 class="text-brand-purple text-5xl lg:text-7xl font-extrabold leading-[1.1] tracking-tighter">
+                        Endulza tus <span class="text-primary">momentos</span>
+                    </h2>
+                    <p class="text-brand-purple/80 text-lg leading-relaxed max-w-md">
+                        En Coletina creemos que cada postre cuenta una historia. Elaboramos cada producto de forma artesanal, seleccionando ingredientes de calidad y prestando atención a cada detalle.
+                    </p>
+                </div>
+                <div class="flex gap-4">
+                    <a href="menu.html" class="bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-xl text-lg font-bold shadow-lg transition-all transform hover:translate-y-[-2px] inline-block text-center">
+                        Ver Menú
+                    </a>
+                    <a href="about.html" class="border-2 border-primary/20 hover:border-primary/40 text-brand-purple px-8 py-4 rounded-xl text-lg font-bold transition-all inline-block text-center">
+                        Personalizar
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Separation / Features Section (Cielo Background) -->
+    <section class="bg-cielo-soft dark:bg-background-dark/50 py-16 px-6 lg:px-40">
+        <div class="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="flex flex-col items-center text-center gap-4">
+                <div class="size-14 bg-white dark:bg-zinc-800 rounded-full flex items-center justify-center text-primary shadow-sm">
+                    <span class="material-symbols-outlined text-3xl">restaurant</span>
+                </div>
+                <h3 class="font-bold text-xl text-brand-purple">Ingredientes Premium</h3>
+                <p class="text-brand-purple/70 text-sm">Usamos solo la mejor mantequilla, cacao y frutas orgánicas.</p>
+            </div>
+            <div class="flex flex-col items-center text-center gap-4">
+                <div class="size-14 bg-white dark:bg-zinc-800 rounded-full flex items-center justify-center text-primary shadow-sm">
+                    <span class="material-symbols-outlined text-3xl">local_shipping</span>
+                </div>
+                <h3 class="font-bold text-xl text-brand-purple">Entrega a Domicilio</h3>
+                <p class="text-brand-purple/70 text-sm">Tus postres favoritos directamente hasta la puerta de tu casa.</p>
+            </div>
+            <div class="flex flex-col items-center text-center gap-4">
+                <div class="size-14 bg-white dark:bg-zinc-800 rounded-full flex items-center justify-center text-primary shadow-sm">
+                    <span class="material-symbols-outlined text-3xl">volunteer_activism</span>
+                </div>
+                <h3 class="font-bold text-xl text-brand-purple">Hecho a Mano</h3>
+                <p class="text-brand-purple/70 text-sm">Cada pedido es preparado artesanalmente bajo pedido.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Categories Section -->
+    <section class="px-6 lg:px-40 py-20 bg-background-light dark:bg-background-dark">
+        <div class="max-w-[1200px] mx-auto">
+            <div class="flex justify-between items-end mb-12">
+                <div>
+                    <h2 class="text-brand-purple text-3xl font-black tracking-tight">Categorías Dulces</h2>
+                    <p class="text-brand-purple/60 mt-2">Nuestras especialidades más queridas</p>
+                </div>
+                <a class="text-primary font-bold flex items-center gap-2 hover:underline" href="menu.html">
+                    Ver todo el catálogo <span class="material-symbols-outlined">arrow_right_alt</span>
+                </a>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Category Card 1 -->
+                <a href="menu.html" class="group bg-white dark:bg-zinc-800 p-4 rounded-2xl shadow-sm border border-cielo/10 hover:shadow-xl transition-all duration-300 block">
+                    <div class="w-full aspect-square rounded-xl overflow-hidden mb-6">
+                        <div class="w-full h-full bg-center bg-cover transform group-hover:scale-110 transition-transform duration-500" data-alt="Beautifully tiered pink strawberry cake with fresh berries" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDC0DfEv0BEvozDWriOtTBvwWeN7G70JlK-5trSlkAFSqxWGEI1QnagD5UU8D6cyF3tE5ln1XwQgI6xKtOEAIleXEMga6VNQyl5iEhS8CJPZK3WXCy4ckVRFlyAtug0tcDhKDPmnbcI_rtTrRzmGu0KOu4RhTq_MEpd0FvO3ZGCtQVc9JUlwczKc4kfOVRJ3lT_1OcP5Jex9TMdZBm4OF8UHvvSr_hbSumDrAzJ-R6pw9lH-F8-0wGjFb_C9qzpE2fKSg-inbt2aL4");'>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <h3 class="text-brand-purple text-xl font-bold">Pasteles</h3>
+                            <p class="text-brand-purple/60 text-sm">Diseños únicos y personalizados</p>
+                        </div>
+                        <div class="size-10 bg-primary/10 text-primary rounded-full flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+                            <span class="material-symbols-outlined">arrow_forward</span>
+                        </div>
+                    </div>
+                </a>
+                <!-- Category Card 2 -->
+                <a href="menu.html" class="group bg-white dark:bg-zinc-800 p-4 rounded-2xl shadow-sm border border-cielo/10 hover:shadow-xl transition-all duration-300 block">
+                    <div class="w-full aspect-square rounded-xl overflow-hidden mb-6">
+                        <div class="w-full h-full bg-center bg-cover transform group-hover:scale-110 transition-transform duration-500" data-alt="Freshly baked chocolate chip cookies on a cooling rack" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAr4bT5SrzZc9UPxji4_E0Ds3cRJl2aUqqE00hTYl0VWgs4lksDCKAz0DLZgMONAlZsxbz_xdoQD-FierWIb6n23hpQZsitfJuX6UwtoQIsUfb_ZGP5rcrjjrSIFKdbtMxd6gxzq6oFIbqFgz7tW2iHxAeZyUxHcHXe_t1mSClH3B_1XbPKiUXKtNA7oMIJ1tBnnkdYiQYCHzTKzWWco0BlSlzxkliD38o-_ZVhnCkw_MkiE6LVdaiADcWo5R-rl7MeRhrhfWatj44");'>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <h3 class="text-brand-purple text-xl font-bold">Galletas</h3>
+                            <p class="text-brand-purple/60 text-sm">Recién horneadas cada mañana</p>
+                        </div>
+                        <div class="size-10 bg-primary/10 text-primary rounded-full flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+                            <span class="material-symbols-outlined">arrow_forward</span>
+                        </div>
+                    </div>
+                </a>
+                <!-- Category Card 3 -->
+                <a href="menu.html" class="group bg-white dark:bg-zinc-800 p-4 rounded-2xl shadow-sm border border-cielo/10 hover:shadow-xl transition-all duration-300 block">
+                    <div class="w-full aspect-square rounded-xl overflow-hidden mb-6">
+                        <div class="w-full h-full bg-center bg-cover transform group-hover:scale-110 transition-transform duration-500" data-alt="Assorted French pastries and croissants in a bakery window" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCJhUJygBbikLdaqEnkwQIdpsxCPq5KMFWdcbQgAZF5zoSNM_uTfi8nRnQDUVpZYsHsGM7fFgG5WpHj-GgWJlLlqUsDtdrA-8xoFVnmT6ZP5gUlq6lBB6GAX8YY3m6dGgJ1MfddbHiRQqxe1FpcVO13bSX_eiNmT7RLwV2eZGkH100bjt3fkC-T-PH5kNYkp9N1hJe7XQHldfg73Nn7zOTg3LoqorbpkKOtt8UfEtSK22duJRB6Ql1mNxm2nA6WzZHNh-FT3LIoIA4");'>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <h3 class="text-brand-purple text-xl font-bold">Repostería</h3>
+                            <p class="text-brand-purple/60 text-sm">Dulces tentaciones francesas</p>
+                        </div>
+                        <div class="size-10 bg-primary/10 text-primary rounded-full flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
+                            <span class="material-symbols-outlined">arrow_forward</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- CTA Section -->
+    <section class="px-6 lg:px-40 py-24 mb-20">
+        <div class="max-w-[1200px] mx-auto relative rounded-[2rem] overflow-hidden bg-primary/10 dark:bg-zinc-800/50 p-8 lg:p-20 text-center">
+            <div class="absolute top-0 right-0 p-10 opacity-10">
+                <span class="material-symbols-outlined text-[200px]">celebration</span>
+            </div>
+            <div class="relative z-10 flex flex-col items-center gap-8">
+                <h2 class="text-brand-purple text-4xl lg:text-5xl font-black max-w-[800px] leading-tight tracking-tight">
+                    ¿Tienes un evento especial próximamente?
+                </h2>
+                <p class="text-brand-purple/70 text-lg lg:text-xl max-w-2xl font-medium">
+                    Creamos pasteles personalizados para bodas, cumpleaños y celebraciones inolvidables. Déjanos ser parte de tu historia.
+                </p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="about.html" class="bg-primary hover:bg-primary/90 text-white px-10 py-4 rounded-full text-lg font-bold shadow-lg transition-all flex items-center gap-2">
+                        <span class="material-symbols-outlined">mail</span>
+                        Contáctanos Ahora
+                    </a>
+                    <button class="bg-white hover:bg-zinc-50 text-brand-purple px-10 py-4 rounded-full text-lg font-bold shadow-sm transition-all border border-cielo/20">
+                        Ver Galería de Eventos
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<!-- Footer -->
+<footer class="bg-background-light dark:bg-background-dark border-t border-cielo/10 px-6 lg:px-40 py-12">
+    <div class="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+        <div class="flex flex-col gap-4">
+            <h4 class="text-brand-purple text-xl font-black">Coletina <span class="text-primary">Repostería</span></h4>
+            <p class="text-brand-purple/60 text-sm leading-relaxed">
+                Artesanía dulce para todos tus sentidos. Horneando felicidad en cada detalle.
+            </p>
+            <div class="flex gap-4 mt-2">
+                <a class="text-brand-purple hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">language</span></a>
+                <a class="text-brand-purple hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">camera_enhance</span></a>
+                <a class="text-brand-purple hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">chat</span></a>
+            </div>
+        </div>
+        <div class="flex flex-col gap-4">
+            <h5 class="text-brand-purple font-bold">Navegación</h5>
+            <ul class="text-brand-purple/70 text-sm flex flex-col gap-2">
+                <li><a class="hover:text-primary transition-colors" href="menu.html">Menú de Temporada</a></li>
+                <li><a class="hover:text-primary transition-colors" href="about.html">Sobre Nosotros</a></li>
+                <li><a class="hover:text-primary transition-colors" href="about.html#contact">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="flex flex-col gap-4">
+            <h5 class="text-brand-purple font-bold">Contacto</h5>
+            <ul class="text-brand-purple/70 text-sm flex flex-col gap-2">
+                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">location_on</span> Calle de los Dulces, Ciudad</li>
+                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">mail</span> hola@coletina.com</li>
+            </ul>
+        </div>
+        <div class="flex flex-col gap-4">
+            <h5 class="text-brand-purple font-bold">Newsletter</h5>
+            <p class="text-brand-purple/60 text-sm">Recibe promociones y recetas exclusivas.</p>
+            <div class="flex flex-col gap-2 mt-2">
+                <input class="bg-white border-cielo/20 rounded-lg text-sm focus:ring-primary focus:border-primary px-4 py-2" placeholder="Tu email" type="email"/>
+                <button class="bg-primary text-white font-bold py-2 rounded-lg text-sm">Suscribirme</button>
+            </div>
+        </div>
+    </div>
+    <div class="max-w-[1200px] mx-auto mt-12 pt-8 border-t border-cielo/10 text-center">
+        <p class="text-brand-purple/40 text-xs">© 2024 Coletina Repostería. Todos los derechos reservados.</p>
+    </div>
+</footer>
+</body>
+</html>
