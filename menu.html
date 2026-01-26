@@ -13,15 +13,25 @@
             theme: {
                 extend: {
                     colors: {
-                        "primary": "#ff9b8a", // Salmon
-                        "lila": "#A5A4FF",
-                        "purple-deep": "#5B5AA2",
-                        "cielo": "#C8BEC0",   // CORREGIDO: Antes era azul claro, ahora es el gris/beige de la marca                       
-                        "background-light": "#fcf8f8",
+                        // Color Principal: Chocolate/Borgoña Profundo
+                        // Uso: Logotipo, textos de lectura, botones principales
+                        "primary": "#491d25",
+                        // Color Secundario: Rosa Antiguo / Dusty Rose
+                        // Uso: Fondos decorativos, acentos, "pops" de color
+                        "secondary": "#e1b4a8",
+                        // Color Base: Crema / Off-White
+                        // Uso: Fondo general del sitio
+                        "background-light": "#f8f1ef",
+                        // Mantenemos un oscuro para modo noche si es necesario, 
+                        // o usamos el mismo borgoña muy oscuro.
                         "background-dark": "#23120f",
+                        // Color para textos suaves o acentos neutros
+                        "cielo": "#e1b4a8", // Reemplazado por el Rosa Antiguo para coherencia
                     },
                     fontFamily: {
-                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                        "display": ["Plus Jakarta Sans", "sans-serif"],
+                        // Si decides agregar las fuentes del brief (Crushed/Montserrat), 
+                        // deberás importarlas en Google Fonts primero.
                     },
                     borderRadius: {
                         "DEFAULT": "0.25rem",
