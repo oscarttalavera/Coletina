@@ -16,7 +16,7 @@
                         "primary": "#ff9b8a", // Salmon
                         "lila": "#A5A4FF",
                         "purple-deep": "#5B5AA2",
-                        "cielo": "#E0F2FE",
+                        "cielo": "#C8BEC0",   // CORREGIDO: Antes era azul claro, ahora es el gris/beige de la marca                       
                         "background-light": "#fcf8f8",
                         "background-dark": "#23120f",
                     },
@@ -81,160 +81,162 @@
                 </button>
             </div>
         </header>
+
         <main class="px-4 md:px-20 lg:px-40 flex flex-1 justify-center py-8">
             <div class="layout-content-container flex flex-col max-w-[1200px] flex-1 gap-8">
-                <!-- HeaderImage -->
                 <div class="@container">
                     <div class="@[480px]:py-3">
                         <div class="bg-cover bg-center flex flex-col justify-end overflow-hidden bg-[#fcf8f8] rounded-xl min-h-[300px] relative shadow-xl" data-alt="Delicious close up of a berry cake" style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 60%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuBIoeeMwEOIzh_dfK5UikVHQDOmHSoGEu64f9-FGGx2vim6qYPUlMuSm3g-iiMUkT9nmXlG4FCwzEmpRzsYU-PFelAzjjMT28F_VYfZh2LtzcfU6qCbqd-xKiR3qfjVnGBdXxAv1YjCtKhfv-NJSJt2qLrSthr038tXg3qfXF7Xd_FvrxFm4a7NqEFYYgScunskhneOmQZqyxydMVKuqUSIWP2j-DiigEzjp1HG0eXx0TdeBba8CFwGowzfm6mR_pN5SNUT2bsVxME");'>
                             <div class="flex flex-col p-8 gap-2">
-                                <span class="text-cielo font-medium tracking-widest uppercase text-xs">Artesanal &amp; Dulce</span>
+                                <span class="text-cielo font-medium tracking-widest uppercase text-xs">Artesanal & Dulce</span>
                                 <h1 class="text-white tracking-tight text-4xl md:text-5xl font-bold leading-tight">Nuestro Menú Dulce</h1>
                                 <p class="text-white/80 max-w-lg text-sm md:text-base">Explora nuestra selección premium de repostería creativa, hecha con ingredientes naturales y mucho amor.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Filter Chips -->
+                
                 <div class="flex flex-col gap-4">
                     <h3 class="text-xl font-bold px-3">Explorar Categorías</h3>
                     <div class="flex gap-3 p-3 flex-wrap">
-                        <div class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-primary text-white px-6 cursor-pointer shadow-md">
+                        <div class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-primary text-white px-6 cursor-pointer shadow-md transition-transform hover:scale-105">
                             <span class="material-symbols-outlined text-[18px]">grid_view</span>
-                            <p class="text-sm font-semibold leading-normal">Todos</p>
+                            <p class="text-sm font-semibold leading-normal">Todo</p>
                         </div>
                         <div class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#f4e8e6] dark:bg-[#3a2a27] px-6 cursor-pointer hover:bg-lila/20 transition-colors">
                             <span class="material-symbols-outlined text-[18px] text-primary">cake</span>
                             <p class="text-[#1d0f0c] dark:text-white text-sm font-medium leading-normal">Pasteles</p>
                         </div>
                         <div class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#f4e8e6] dark:bg-[#3a2a27] px-6 cursor-pointer hover:bg-lila/20 transition-colors">
-                            <span class="material-symbols-outlined text-[18px] text-primary">cookie</span>
-                            <p class="text-[#1d0f0c] dark:text-white text-sm font-medium leading-normal">Galletas</p>
-                        </div>
-                        <div class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#f4e8e6] dark:bg-[#3a2a27] px-6 cursor-pointer hover:bg-lila/20 transition-colors">
                             <span class="material-symbols-outlined text-[18px] text-primary">icecream</span>
                             <p class="text-[#1d0f0c] dark:text-white text-sm font-medium leading-normal">Cupcakes</p>
                         </div>
+                        <div class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#f4e8e6] dark:bg-[#3a2a27] px-6 cursor-pointer hover:bg-lila/20 transition-colors">
+                            <span class="material-symbols-outlined text-[18px] text-primary">cookie</span>
+                            <p class="text-[#1d0f0c] dark:text-white text-sm font-medium leading-normal">Brownies & Más</p>
+                        </div>
                     </div>
                 </div>
-                <!-- ImageGrid - Product Catalog -->
+
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-4">
-                    <!-- Product 1: Torta de Chocolate Real -->
+                    
                     <div class="product-card flex flex-col gap-4 group bg-white dark:bg-[#2d1b18] p-4 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300">
-                        <div class="w-full bg-center bg-no-repeat aspect-[4/5] bg-cover rounded-lg overflow-hidden" data-alt="Dark chocolate cake with ganache" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDRwUcdaKr51gDIF-ocK3wQdcLTMY3DBqlOyv2KgV4p5FsbAI05zcXb4jv_pg2NdD1Uj2Z6oC-NHvvxqG5XSUg800PvWJig35WdqdxPb1HE-5_sA604vtDzY5D6cts9j-In8xiZfdLkfHeJEAowT5zKsGyYjnHw6wpKyuB2GZZIokihpPGOD5nCtakwszhjh95S-YbDVc6Qg8BCdO6TgO98CJHFsFWH7mYnp9EveMGdrfgFhrqiBQAqJVyEmPHasMq2oH9UR614dKg");'>
+                        <div class="w-full bg-center bg-no-repeat aspect-[4/5] bg-cover rounded-lg overflow-hidden" data-alt="Carrot cake with cream cheese frosting" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDRwUcdaKr51gDIF-ocK3wQdcLTMY3DBqlOyv2KgV4p5FsbAI05zcXb4jv_pg2NdD1Uj2Z6oC-NHvvxqG5XSUg800PvWJig35WdqdxPb1HE-5_sA604vtDzY5D6cts9j-In8xiZfdLkfHeJEAowT5zKsGyYjnHw6wpKyuB2GZZIokihpPGOD5nCtakwszhjh95S-YbDVc6Qg8BCdO6TgO98CJHFsFWH7mYnp9EveMGdrfgFhrqiBQAqJVyEmPHasMq2oH9UR614dKg");'>
                             <div class="w-full h-full bg-black/0 group-hover:bg-black/10 transition-all"></div>
                         </div>
                         <div class="flex flex-col flex-1">
                             <div class="flex justify-between items-start mb-2">
-                                <h4 class="text-[#1d0f0c] dark:text-white text-lg font-bold leading-tight">Torta de Chocolate Real</h4>
-                                <span class="text-primary text-lg font-bold leading-tight">$25.00</span>
+                                <h4 class="text-[#1d0f0c] dark:text-white text-lg font-bold leading-tight">Pastel de Zanahoria Signature</h4>
+                                <span class="text-primary text-sm font-bold leading-tight uppercase">Cotizar</span>
                             </div>
-                            <p class="text-gray-600 dark:text-gray-400 text-sm font-normal leading-relaxed mb-6">Capas húmedas de cacao premium rellenas de ganache aterciopelado y chispas.</p>
-                            <a href="https://wa.me/34912345678" target="_blank" class="whatsapp-btn mt-auto flex w-full items-center justify-center gap-2 rounded-lg h-11 bg-primary text-white font-bold transition-all duration-300">
+                            <p class="text-gray-600 dark:text-gray-400 text-sm font-normal leading-relaxed mb-6">Nuestro pastel estrella: bizcocho húmedo de zanahoria con nueces y betún casero de queso crema.</p>
+                            <a href="https://wa.me/526391333182" target="_blank" class="whatsapp-btn mt-auto flex w-full items-center justify-center gap-2 rounded-lg h-11 bg-primary text-white font-bold transition-all duration-300">
                                 <span class="material-symbols-outlined text-[20px]">chat</span>
                                 <span>Pedir por WhatsApp</span>
                             </a>
                         </div>
                     </div>
-                    <!-- Product 2: Cheesecake Frutos Rojos -->
+
                     <div class="product-card flex flex-col gap-4 group bg-white dark:bg-[#2d1b18] p-4 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300">
-                        <div class="w-full bg-center bg-no-repeat aspect-[4/5] bg-cover rounded-lg overflow-hidden" data-alt="Berry cheesecake with fresh fruit" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCxNgrZUF8u_wQat2MxPBjtE3rbVXqG78N3bf4_HzvACI_v3nySxXr2LF2CV3dTKqgZj7dsHBlD0jeNgOUAuAVdDJxI4vx0PRrSBbamRyKCcUvY14QcZ9vKl8DZsew3Z8ufZyRM2HgSyxDyhpMipvj2iOO_-h4BuFUoz7TOarMESPxw4oN7hNxedruqtc5biII2N9wNRL-ofAn17vdxzpap_Ohe8AtuFCKJZSxcHueXIsBTi2ta-YSTg2ahi_zB0NAOKEHOB0GxIiQ");'>
+                        <div class="w-full bg-center bg-no-repeat aspect-[4/5] bg-cover rounded-lg overflow-hidden" data-alt="Chocolate cake and flan combo" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCxNgrZUF8u_wQat2MxPBjtE3rbVXqG78N3bf4_HzvACI_v3nySxXr2LF2CV3dTKqgZj7dsHBlD0jeNgOUAuAVdDJxI4vx0PRrSBbamRyKCcUvY14QcZ9vKl8DZsew3Z8ufZyRM2HgSyxDyhpMipvj2iOO_-h4BuFUoz7TOarMESPxw4oN7hNxedruqtc5biII2N9wNRL-ofAn17vdxzpap_Ohe8AtuFCKJZSxcHueXIsBTi2ta-YSTg2ahi_zB0NAOKEHOB0GxIiQ");'>
                             <div class="w-full h-full bg-black/0 group-hover:bg-black/10 transition-all"></div>
                         </div>
                         <div class="flex flex-col flex-1">
                             <div class="flex justify-between items-start mb-2">
-                                <h4 class="text-[#1d0f0c] dark:text-white text-lg font-bold leading-tight">Cheesecake Frutos Rojos</h4>
-                                <span class="text-primary text-lg font-bold leading-tight">$22.00</span>
+                                <h4 class="text-[#1d0f0c] dark:text-white text-lg font-bold leading-tight">Chocoflan Tradicional</h4>
+                                <span class="text-primary text-sm font-bold leading-tight uppercase">Cotizar</span>
                             </div>
-                            <p class="text-gray-600 dark:text-gray-400 text-sm font-normal leading-relaxed mb-6">Base crujiente de mantequilla con crema suave y reducción natural de berries.</p>
-                            <a href="https://wa.me/34912345678" target="_blank" class="whatsapp-btn mt-auto flex w-full items-center justify-center gap-2 rounded-lg h-11 bg-primary text-white font-bold transition-all duration-300">
+                            <p class="text-gray-600 dark:text-gray-400 text-sm font-normal leading-relaxed mb-6">La perfecta combinación de bizcocho de chocolate y flan de vainilla, bañado en caramelo.</p>
+                            <a href="https://wa.me/526391333182" target="_blank" class="whatsapp-btn mt-auto flex w-full items-center justify-center gap-2 rounded-lg h-11 bg-primary text-white font-bold transition-all duration-300">
                                 <span class="material-symbols-outlined text-[20px]">chat</span>
                                 <span>Pedir por WhatsApp</span>
                             </a>
                         </div>
                     </div>
-                    <!-- Product 3: Pack Galletas Artesanas -->
+
                     <div class="product-card flex flex-col gap-4 group bg-white dark:bg-[#2d1b18] p-4 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300">
-                        <div class="w-full bg-center bg-no-repeat aspect-[4/5] bg-cover rounded-lg overflow-hidden" data-alt="Assorted gourmet cookies" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCMkrGajstslOgfq6S0jLdDy9cHbe8aIjr-7OoDjWaMQPRthszWmkAqlWXdgceZ2wCpGLPnLRYLFiEcU4z6O_Q4NRTSeZTQOgKQMYjShorMaZmUCdCULKRFENn2eDhT1Ef5VlMUSZO98BrHIxlra7GvZ3lQuKZ6HwYDVa65hlG1Df1GvuX05wIE2SINegy69AT7PnxDLDK5v4JV8KqAgLE4eNp82UsJT0QA_ZoRmB0XZSqRpaPkPWYz8u-DCc1qBxr3YuCJMEHbDNY");'>
+                        <div class="w-full bg-center bg-no-repeat aspect-[4/5] bg-cover rounded-lg overflow-hidden" data-alt="Assorted gourmet cupcakes" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCMkrGajstslOgfq6S0jLdDy9cHbe8aIjr-7OoDjWaMQPRthszWmkAqlWXdgceZ2wCpGLPnLRYLFiEcU4z6O_Q4NRTSeZTQOgKQMYjShorMaZmUCdCULKRFENn2eDhT1Ef5VlMUSZO98BrHIxlra7GvZ3lQuKZ6HwYDVa65hlG1Df1GvuX05wIE2SINegy69AT7PnxDLDK5v4JV8KqAgLE4eNp82UsJT0QA_ZoRmB0XZSqRpaPkPWYz8u-DCc1qBxr3YuCJMEHbDNY");'>
                             <div class="w-full h-full bg-black/0 group-hover:bg-black/10 transition-all"></div>
                         </div>
                         <div class="flex flex-col flex-1">
                             <div class="flex justify-between items-start mb-2">
-                                <h4 class="text-[#1d0f0c] dark:text-white text-lg font-bold leading-tight">Pack Galletas Artesanas</h4>
-                                <span class="text-primary text-lg font-bold leading-tight">$12.00</span>
+                                <h4 class="text-[#1d0f0c] dark:text-white text-lg font-bold leading-tight">Cupcakes Gourmet</h4>
+                                <span class="text-primary text-sm font-bold leading-tight uppercase">Min. Requerido</span>
                             </div>
-                            <p class="text-gray-600 dark:text-gray-400 text-sm font-normal leading-relaxed mb-6">Seis galletas recién horneadas: Choco-chip, Red Velvet y Avena miel.</p>
-                            <a href="https://wa.me/34912345678" target="_blank" class="whatsapp-btn mt-auto flex w-full items-center justify-center gap-2 rounded-lg h-11 bg-primary text-white font-bold transition-all duration-300">
+                            <p class="text-gray-600 dark:text-gray-400 text-sm font-normal leading-relaxed mb-6">Sabores: Chocolate, Red Velvet, Fresa, Plátano-avena. Cobertura de betún o chantillí.</p>
+                            <a href="https://wa.me/526391333182" target="_blank" class="whatsapp-btn mt-auto flex w-full items-center justify-center gap-2 rounded-lg h-11 bg-primary text-white font-bold transition-all duration-300">
                                 <span class="material-symbols-outlined text-[20px]">chat</span>
                                 <span>Pedir por WhatsApp</span>
                             </a>
                         </div>
                     </div>
+
                 </div>
-                <!-- Custom Order Banner (Card Variant) -->
+
                 <div class="p-4 @container">
                     <div class="flex flex-col items-stretch justify-start rounded-xl @xl:flex-row @xl:items-center shadow-lg bg-lila/10 dark:bg-lila/5 border border-lila/20 overflow-hidden">
-                        <div class="w-full @xl:w-1/3 bg-center bg-no-repeat aspect-video bg-cover" data-alt="Special custom designed cake for wedding" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCcpOTSe9n3Zn8dP1kGie30Pl3PURv2olBJcC8mposRHIqAt0OgO3CfEfJCV1HdaB7xdgLwsF3yxeW27YMhBhPvbd7u1Jreq-wb9WSx91MSWWBxnMh3Z2mr3HUZvugciGKGdb_qQM0UIFqcANralwjWHd0inODDRANl6aJLDnK5t7Rgu3f4PyVaXikPzHILw6PmdMsr77rFL5xl2xQ4ky-K6DQARaJFFdch3bC6HGPTzNMFQI-WRT6BUnvYTNC-2_qGlhutegPFTn8");'></div>
+                        <div class="w-full @xl:w-1/3 bg-center bg-no-repeat aspect-video bg-cover" data-alt="Custom designed wedding cake" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCcpOTSe9n3Zn8dP1kGie30Pl3PURv2olBJcC8mposRHIqAt0OgO3CfEfJCV1HdaB7xdgLwsF3yxeW27YMhBhPvbd7u1Jreq-wb9WSx91MSWWBxnMh3Z2mr3HUZvugciGKGdb_qQM0UIFqcANralwjWHd0inODDRANl6aJLDnK5t7Rgu3f4PyVaXikPzHILw6PmdMsr77rFL5xl2xQ4ky-K6DQARaJFFdch3bC6HGPTzNMFQI-WRT6BUnvYTNC-2_qGlhutegPFTn8");'></div>
                         <div class="flex w-full min-w-72 grow flex-col items-start justify-center gap-4 py-8 px-8">
                             <div class="flex flex-col gap-2">
-                                <h3 class="text-purple-deep dark:text-lila text-2xl font-bold leading-tight tracking-[-0.015em]">¿Buscas algo personalizado?</h3>
-                                <p class="text-[#1d0f0c]/70 dark:text-white/70 text-base font-normal leading-relaxed max-w-lg">Creamos la torta de tus sueños para bodas, cumpleaños y eventos especiales. Cuéntanos tu idea y la hacemos realidad.</p>
-                                <p class="text-primary text-xl font-bold leading-normal">Desde $45.00</p>
+                                <h3 class="text-purple-deep dark:text-lila text-2xl font-bold leading-tight tracking-[-0.015em]">Pasteles Personalizados</h3>
+                                <p class="text-[#1d0f0c]/70 dark:text-white/70 text-base font-normal leading-relaxed max-w-lg">Bodas, cumpleaños o eventos. Elige tu bizcocho (Chocolate, Red Velvet, Vainilla) y decoración a medida.</p>
+                                <p class="text-primary text-xl font-bold leading-normal">Cotiza tu idea</p>
                             </div>
                             <a href="about.html" class="flex min-w-[200px] cursor-pointer items-center justify-center gap-2 rounded-lg h-12 px-6 bg-purple-deep text-white text-sm font-bold leading-normal hover:scale-105 transition-transform shadow-lg shadow-purple-deep/20">
                                 <span class="material-symbols-outlined">design_services</span>
-                                <span>Cotizar por WhatsApp</span>
+                                <span>Contactar Diseño</span>
                             </a>
                         </div>
                     </div>
                 </div>
-                <!-- Additional Grid Items -->
+
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-4">
-                    <!-- Product 4: Brownie Especial -->
+                    
                     <div class="product-card flex flex-col gap-4 group bg-white dark:bg-[#2d1b18] p-4 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300">
-                        <div class="w-full bg-center bg-no-repeat aspect-[4/5] bg-cover rounded-lg overflow-hidden" data-alt="Fudgy brownies with walnuts" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBbVvyHnW6PqVD8nVtI_4A3twxUeCpOkitt1_woNh_xH8daReSDd3i_KuURKDxbDbyumy2XoU0_LRWkUaQQpAuzv9ZcAKc8rmUSVnbkWaTqEwa4lZntlnrbjAjFC-Ql9TJIPBV1a3xPyO6as3r2QzsxGUFOlpeRN5sFC0lIEXHYEsYXG0xokAfmtYBMA1B5bhsXremSdX1Ne3Xab26ep5bztK7BfkJtKVnDn-F_F3qq-9zfUjQJDgM9nbZuWzcf21J_ink4HSbERgM");'></div>
+                        <div class="w-full bg-center bg-no-repeat aspect-[4/5] bg-cover rounded-lg overflow-hidden" data-alt="Fudgy brownies" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBbVvyHnW6PqVD8nVtI_4A3twxUeCpOkitt1_woNh_xH8daReSDd3i_KuURKDxbDbyumy2XoU0_LRWkUaQQpAuzv9ZcAKc8rmUSVnbkWaTqEwa4lZntlnrbjAjFC-Ql9TJIPBV1a3xPyO6as3r2QzsxGUFOlpeRN5sFC0lIEXHYEsYXG0xokAfmtYBMA1B5bhsXremSdX1Ne3Xab26ep5bztK7BfkJtKVnDn-F_F3qq-9zfUjQJDgM9nbZuWzcf21J_ink4HSbERgM");'></div>
                         <div class="flex flex-col flex-1">
                             <div class="flex justify-between items-start mb-2">
-                                <h4 class="text-[#1d0f0c] dark:text-white text-lg font-bold leading-tight">Brownie Especial</h4>
-                                <span class="text-primary text-lg font-bold leading-tight">$10.00</span>
+                                <h4 class="text-[#1d0f0c] dark:text-white text-lg font-bold leading-tight">Brownies Artesanales</h4>
+                                <span class="text-primary text-sm font-bold leading-tight uppercase">Bajo Pedido</span>
                             </div>
-                            <p class="text-gray-600 dark:text-gray-400 text-sm font-normal leading-relaxed mb-6">Cuadrados densos de chocolate con nueces tostadas y un toque de sal marina.</p>
+                            <p class="text-gray-600 dark:text-gray-400 text-sm font-normal leading-relaxed mb-6">Textura perfecta entre crujiente y húmeda. Con chispas, nuez, o almendras tostadas.</p>
+                            <a href="https://wa.me/526391333182" target="_blank" class="whatsapp-btn mt-auto flex w-full items-center justify-center gap-2 rounded-lg h-11 bg-primary text-white font-bold transition-all duration-300">
+                                <span class="material-symbols-outlined text-[20px]">chat</span>
+                                <span>Pedir por WhatsApp</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="product-card flex flex-col gap-4 group bg-white dark:bg-[#2d1b18] p-4 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300">
+                        <div class="w-full bg-center bg-no-repeat aspect-[4/5] bg-cover rounded-lg overflow-hidden" data-alt="Cinnamon rolls with glaze" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBVlAX4Kl-vuo8lxnQZBhJxsd6oeLkSzJgkFr1euZfu1dyaDaWLt32xcP64FBsQYF0ngmdirb87QTiGsNcUIh4jcd1zADeA42JsqyAY5h7A4QKLvtENlTQphbJT_gc2mxS3ZXZcMfZ8isS1vKEEyCLz6j7I_MCMkTbnwgXustFQzJUOVzc2-IAcZxhbdKNLW1f0sW13jnT4fTiy-VBL2Ktzw8ebilNFMRYxxkJxdUhygIBCTuThe-SyIaTQjcg6bBVTqTjmOdA3a2I");'></div>
+                        <div class="flex flex-col flex-1">
+                            <div class="flex justify-between items-start mb-2">
+                                <h4 class="text-[#1d0f0c] dark:text-white text-lg font-bold leading-tight">Roles de Canela</h4>
+                                <span class="text-primary text-sm font-bold leading-tight uppercase">Bajo Pedido</span>
+                            </div>
+                            <p class="text-gray-600 dark:text-gray-400 text-sm font-normal leading-relaxed mb-6">Suaves y esponjosos, con el equilibrio perfecto entre canela y glaseado dulce.</p>
                             <a href="https://wa.me/34912345678" target="_blank" class="whatsapp-btn mt-auto flex w-full items-center justify-center gap-2 rounded-lg h-11 bg-primary text-white font-bold transition-all duration-300">
                                 <span class="material-symbols-outlined text-[20px]">chat</span>
                                 <span>Pedir por WhatsApp</span>
                             </a>
                         </div>
                     </div>
-                    <!-- Product 5: Tarta de Manzana -->
+
                     <div class="product-card flex flex-col gap-4 group bg-white dark:bg-[#2d1b18] p-4 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300">
-                        <div class="w-full bg-center bg-no-repeat aspect-[4/5] bg-cover rounded-lg overflow-hidden" data-alt="Apple tart" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBVlAX4Kl-vuo8lxnQZBhJxsd6oeLkSzJgkFr1euZfu1dyaDaWLt32xcP64FBsQYF0ngmdirb87QTiGsNcUIh4jcd1zADeA42JsqyAY5h7A4QKLvtENlTQphbJT_gc2mxS3ZXZcMfZ8isS1vKEEyCLz6j7I_MCMkTbnwgXustFQzJUOVzc2-IAcZxhbdKNLW1f0sW13jnT4fTiy-VBL2Ktzw8ebilNFMRYxxkJxdUhygIBCTuThe-SyIaTQjcg6bBVTqTjmOdA3a2I");'></div>
+                        <div class="w-full bg-center bg-no-repeat aspect-[4/5] bg-cover rounded-lg overflow-hidden" data-alt="Chocolate chip cookies" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCOPXc-mgmx-_h533-XRt2NZZcBO1cadVeNe5_goKSnSb0TNiRiMooorfaf-NqOKxZjQIeVWe9dxyJwrHBNdEc8TUqyTjgYKWgPPXW9ruUxISNJAy9pER1nm9AyhzS8Hjj3Ak_B0LnfdjICsswNcilFGSVkYWfGiWNoA5DVknsQ4nMwR3N2M-2Pv3MTAMuPfpSrwjs4l3L2sef6C5hOaSO9uOikClzO8nfdAu0ZWn1DvCy9WtnCuoWab4T-CJ4-le800umDYCa9MTI");'></div>
                         <div class="flex flex-col flex-1">
                             <div class="flex justify-between items-start mb-2">
-                                <h4 class="text-[#1d0f0c] dark:text-white text-lg font-bold leading-tight">Tarta de Manzana</h4>
-                                <span class="text-primary text-lg font-bold leading-tight">$18.00</span>
+                                <h4 class="text-[#1d0f0c] dark:text-white text-lg font-bold leading-tight">Galletas Chispas</h4>
+                                <span class="text-primary text-sm font-bold leading-tight uppercase">Bajo Pedido</span>
                             </div>
-                            <p class="text-gray-600 dark:text-gray-400 text-sm font-normal leading-relaxed mb-6">Masa quebrada artesanal con manzanas caramelizadas y canela de Ceilán.</p>
-                            <a href="https://wa.me/34912345678" target="_blank" class="whatsapp-btn mt-auto flex w-full items-center justify-center gap-2 rounded-lg h-11 bg-primary text-white font-bold transition-all duration-300">
+                            <p class="text-gray-600 dark:text-gray-400 text-sm font-normal leading-relaxed mb-6">Crujientes por fuera, suaves por dentro, con generosas chispas de chocolate.</p>
+                            <a href="https://wa.me/526391333182" target="_blank" class="whatsapp-btn mt-auto flex w-full items-center justify-center gap-2 rounded-lg h-11 bg-primary text-white font-bold transition-all duration-300">
                                 <span class="material-symbols-outlined text-[20px]">chat</span>
                                 <span>Pedir por WhatsApp</span>
                             </a>
                         </div>
                     </div>
-                    <!-- Product 6: Red Velvet Cookies -->
-                    <div class="product-card flex flex-col gap-4 group bg-white dark:bg-[#2d1b18] p-4 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300">
-                        <div class="w-full bg-center bg-no-repeat aspect-[4/5] bg-cover rounded-lg overflow-hidden" data-alt="Red velvet cookies" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCOPXc-mgmx-_h533-XRt2NZZcBO1cadVeNe5_goKSnSb0TNiRiMooorfaf-NqOKxZjQIeVWe9dxyJwrHBNdEc8TUqyTjgYKWgPPXW9ruUxISNJAy9pER1nm9AyhzS8Hjj3Ak_B0LnfdjICsswNcilFGSVkYWfGiWNoA5DVknsQ4nMwR3N2M-2Pv3MTAMuPfpSrwjs4l3L2sef6C5hOaSO9uOikClzO8nfdAu0ZWn1DvCy9WtnCuoWab4T-CJ4-le800umDYCa9MTI");'></div>
-                        <div class="flex flex-col flex-1">
-                            <div class="flex justify-between items-start mb-2">
-                                <h4 class="text-[#1d0f0c] dark:text-white text-lg font-bold leading-tight">Red Velvet Cookies</h4>
-                                <span class="text-primary text-lg font-bold leading-tight">$14.00</span>
-                            </div>
-                            <p class="text-gray-600 dark:text-gray-400 text-sm font-normal leading-relaxed mb-6">Galletas suaves color carmesí con trozos generosos de chocolate blanco.</p>
-                            <a href="https://wa.me/34912345678" target="_blank" class="whatsapp-btn mt-auto flex w-full items-center justify-center gap-2 rounded-lg h-11 bg-primary text-white font-bold transition-all duration-300">
-                                <span class="material-symbols-outlined text-[20px]">chat</span>
-                                <span>Pedir por WhatsApp</span>
-                            </a>
-                        </div>
-                    </div>
+
                 </div>
             </div>
         </main>
