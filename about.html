@@ -1,195 +1,276 @@
 <!DOCTYPE html>
 <html class="light" lang="es">
 <head>
-    <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <title>About Us &amp; Contact - Coletina Repostería</title>
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;family=Questrial&amp;display=swap" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-    <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        // Color Principal: Chocolate/Borgoña Profundo
-                        // Uso: Logotipo, textos de lectura, botones principales
-                        "primary": "#491d25",
-                        // Color Secundario: Rosa Antiguo / Dusty Rose
-                        // Uso: Fondos decorativos, acentos, "pops" de color
-                        "secondary": "#e1b4a8",
-                        // Color Base: Crema / Off-White
-                        // Uso: Fondo general del sitio
-                        "background-light": "#f8f1ef",
-                        // Mantenemos un oscuro para modo noche si es necesario, 
-                        // o usamos el mismo borgoña muy oscuro.
-                        "background-dark": "#23120f",
-                        // Color para textos suaves o acentos neutros
-                        "cielo": "#e1b4a8", // Reemplazado por el Rosa Antiguo para coherencia
-                    },
-                    fontFamily: {
-                        "display": ["Plus Jakarta Sans", "sans-serif"],
-                        // Si decides agregar las fuentes del brief (Crushed/Montserrat), 
-                        // deberás importarlas en Google Fonts primero.
-                    },
-                    borderRadius: {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "full": "9999px"
-                    },
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Nosotros — Coletina Repostería Poética</title>
+<meta name="description" content="Conoce la historia y filosofía detrás de Coletina. Repostería artesanal hecha con ingredientes naturales y amor en Chihuahua, México."/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Noto+Sans:wght@300;400;600&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+        darkMode: "class",
+        theme: {
+            extend: {
+                colors: {
+                    "primary": "#d197a9",
+                    "accent-wine": "#5c1d2e",
+                    "background-light": "#fbf9fa",
+                    "background-dark": "#1d1518",
+                },
+                fontFamily: {
+                    "display": ["Noto Serif", "serif"],
+                    "sans": ["Noto Sans", "sans-serif"]
+                },
+                borderRadius: {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
                 },
             },
-        }
-    </script>
-    <style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
-        body {
-            font-family: "Plus Jakarta Sans", sans-serif;
-        }
-        .questrial-text {
-            font-family: "Questrial", sans-serif;
-        }
-    </style>
+        },
+    }
+</script>
+<style>
+    .glass-nav {
+        background: rgba(251, 249, 250, 0.7);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(209, 151, 169, 0.1);
+    }
+    .value-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .value-card:hover {
+        transform: translateY(-4px);
+    }
+    .contact-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    }
+    .contact-card:hover {
+        transform: translateY(-6px);
+    }
+</style>
 </head>
-<body class="bg-background-light dark:bg-background-dark text-[#1d0f0c]">
-<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
-    <!-- Navigation Bar -->
-    <header class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-solid border-[#f4e8e6] dark:border-[#3d2a27] px-6 md:px-20 lg:px-40 py-4">
-        <div class="max-w-[1200px] mx-auto flex items-center justify-between">
-            <a href="index.html" class="flex items-center gap-3">
-                <div class="text-primary size-8">
-                    <span class="material-symbols-outlined text-3xl">cake</span>
-                </div>
-                <h2 class="text-xl font-extrabold tracking-tight dark:text-white">Coletina</h2>
-            </a>
-            <nav class="hidden md:flex items-center gap-10">
-                <a class="text-sm font-semibold hover:text-primary transition-colors dark:text-white" href="index.html">Inicio</a>
-                <a class="text-sm font-semibold hover:text-primary transition-colors dark:text-white" href="menu.html">Menú</a>
-                <a class="text-sm font-bold text-primary transition-colors" href="about.html">Sobre Nosotros</a>
-                <a class="text-sm font-semibold hover:text-primary transition-colors dark:text-white" href="about.html#contact">Contacto</a>
-            </nav>
-            <a href="menu.html" class="bg-primary text-[#1d0f0c] px-6 py-2.5 rounded-lg text-sm font-bold hover:opacity-90 transition-all shadow-sm">
-                Pide Ahora
-            </a>
+<body class="bg-background-light dark:bg-background-dark font-sans text-slate-900 dark:text-slate-100 antialiased">
+
+<!-- Floating Navigation -->
+<nav class="fixed top-6 left-1/2 -translate-x-1/2 z-50 w-[90%] max-w-5xl glass-nav rounded-full px-6 py-3 flex items-center justify-between shadow-lg">
+    <div class="flex items-center gap-2">
+        <a href="index.html" class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-primary text-3xl">bakery_dining</span>
+            <span class="font-display text-xl font-bold tracking-tight text-accent-wine dark:text-primary">Coletina</span>
+        </a>
+    </div>
+    <div class="hidden md:flex items-center gap-8">
+        <a class="text-sm font-medium hover:text-primary transition-colors" href="menu.html">Menú</a>
+        <a class="text-sm font-medium text-accent-wine font-bold border-b border-primary pb-0.5" href="about.html">Nosotros</a>
+        <a class="text-sm font-medium hover:text-primary transition-colors" href="about.html#contacto">Contacto</a>
+        <a class="text-sm font-medium hover:text-primary transition-colors" href="index.html">Inicio</a>
+    </div>
+    <a href="https://wa.me/526391333182" target="_blank" class="bg-primary hover:bg-primary/90 text-white px-5 py-2 rounded-full text-sm font-bold transition-all shadow-md">
+        Pedir Ahora
+    </a>
+</nav>
+
+<!-- Hero Section -->
+<header class="relative h-[70vh] min-h-[500px] w-full flex items-center justify-center overflow-hidden">
+    <div class="absolute inset-0 z-0">
+        <div class="absolute inset-0 bg-accent-wine/50 z-10"></div>
+        <div class="w-full h-full bg-cover bg-center"
+             style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC_hyN3whAYv3IpPGywGUvPsa9f_bK-UmTr96A4Ig-FwWCplJRQSMW4yvxR7Cz-GJrrG6cul2QkbHiWNN5Gq2TMIUjQwhhZ_z0OJQCg_n6F1RIHDsFrLf7EwYQusyqx_Bmv0zprr_ojFKyIZpj2KYXg7GP65FIsCIa3JIqmMLQVlDbZv8s8ICl8cxVFagtXpV-gbkickpJlmIo9740rPExcKuAm738IDjpqHhCXXi5vviTBAlklMLnGPziAeckiJlgezl4YbRAu7qE');">
         </div>
-    </header>
-    <!-- About Us Section -->
-    <main class="flex-1">
-        <section class="max-w-[1200px] mx-auto px-6 md:px-10 py-16 md:py-24">
-            <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
-                <!-- Image Side -->
-                <div class="w-full lg:w-1/2 relative">
-                    <div class="absolute -top-6 -left-6 w-32 h-32 bg-coletina-lila rounded-full opacity-50 -z-10"></div>
-                    <div class="absolute -bottom-6 -right-6 w-48 h-48 bg-coletina-cielo rounded-full opacity-50 -z-10"></div>
-                    <div class="aspect-[4/5] w-full rounded-2xl overflow-hidden shadow-2xl relative">
-                        <div class="absolute inset-0 bg-cover bg-center" data-alt="Pastry chef dusting flour on dough" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC_hyN3whAYv3IpPGywGUvPsa9f_bK-UmTr96A4Ig-FwWCplJRQSMW4yvxR7Cz-GJrrG6cul2QkbHiWNN5Gq2TMIUjQwhhZ_z0OJQCg_n6F1RIHDsFrLf7EwYQusyqx_Bmv0zprr_ojFKyIZpj2KYXg7GP65FIsCIa3JIqmMLQVlDbZv8s8ICl8cxVFagtXpV-gbkickpJlmIo9740rPExcKuAm738IDjpqHhCXXi5vviTBAlklMLnGPziAeckiJlgezl4YbRAu7qE');">
-                        </div>
-                    </div>
-                </div>
-                <!-- Text Side -->
-                <div class="w-full lg:w-1/2 flex flex-col gap-8">
-                    <div>
-                        <span class="text-primary font-bold uppercase tracking-widest text-sm">Nuestra Esencia</span>
-                        <h1 class="text-4xl md:text-5xl lg:text-6xl font-black mt-4 leading-tight dark:text-white">
-                            Dulzura en cada <span class="text-primary italic">detalle.</span>
-                        </h1>
-                    </div>
-                    <div class="questrial-text text-lg md:text-xl leading-relaxed text-[#5e4541] dark:text-gray-300 space-y-6">
-                        <p>
-                            Coletina es una pastelería artesanal donde cada dulce es preparado con ingredientes seleccionados y el cariño de nuestras manos expertas. Nos especializamos en crear experiencias dulces memorables, ya sea para celebraciones especiales o para endulzar tu día a día.
-                        </p>
-                        <p>
-                            En Coletina creemos que cada postre cuenta una historia. Elaboramos cada producto de forma artesanal, seleccionando ingredientes de calidad y prestando atención a cada detalle. Nuestro compromiso es endulzar tus momentos especiales con creaciones que no solo deleiten tu paladar, sino que también cautiven tu mirada.
-                        </p>
-                        <p>
-                            Nuestros productos son elaborados bajo pedido para garantizar frescura y calidad en cada bocado.
-                        </p>
-                    </div>
-                </div>
+    </div>
+    <div class="relative z-20 text-center px-4 max-w-4xl">
+        <span class="inline-block text-white uppercase tracking-[0.3em] text-xs mb-4 font-semibold opacity-90">Nuestra historia</span>
+        <h1 class="font-display text-5xl md:text-7xl text-white mb-6 leading-tight drop-shadow-lg">
+            Dulzura en cada <br/><span class="italic font-normal">detalle.</span>
+        </h1>
+        <p class="text-white/90 text-lg md:text-xl font-light max-w-2xl mx-auto leading-relaxed">
+            Una pastelería artesanal donde cada dulce cuenta una historia de ingredientes honestos y dedicación genuina.
+        </p>
+    </div>
+</header>
+
+<!-- Story Section -->
+<section class="py-24 px-6 md:px-20 bg-background-light dark:bg-background-dark">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+        <!-- Image -->
+        <div class="relative group">
+            <div class="absolute -inset-4 bg-primary/10 rounded-xl -rotate-2 group-hover:rotate-0 transition-transform"></div>
+            <img class="relative rounded-xl shadow-2xl z-10 w-full aspect-[4/5] object-cover"
+                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdoGScoD1z-zDuZX_XWgrFWrhc4oQOSo-ibwd3Lz5y3mCMwBGfHrBcPNLkVpmJKi8cH4g5eBjw1NAdpYpWeZ3x8FxyinGs2MclkwYDqRp1HtMes1FRFgs7tm82gysgMhsgrYRtXpEJ5OsF3LFQn7v86Huq2bayRr7pvS5urSB7jOBrgrldCUDyEOtH0pBSWABlr4-z8cToSHahJdJ8kTVUIg2U1p1ijNh6WGTCRhFNP89wJvZcOmT00gqg_WKxAbnZiTHGX4z-0Mhu"
+                 alt="Textura artesanal de repostería Coletina"/>
+        </div>
+        <!-- Text -->
+        <div class="space-y-8">
+            <div class="inline-flex items-center gap-2 text-primary">
+                <span class="h-px w-8 bg-primary"></span>
+                <span class="uppercase tracking-widest text-xs font-bold">Nuestra Esencia</span>
             </div>
-        </section>
-        <!-- Contact Section -->
-        <section id="contact" class="bg-white dark:bg-[#1a0d0a] py-20 px-6">
-            <div class="max-w-[1200px] mx-auto text-center">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4 dark:text-white">¿Hablemos de Postres?</h2>
-                <p class="text-[#a15345] dark:text-gray-400 mb-12 max-w-2xl mx-auto">
-                    Estamos listos para hacer realidad tus antojos. Para pedidos y consultas, contáctanos con al menos 48 horas de anticipación.
+            <h2 class="font-display text-4xl md:text-5xl text-accent-wine dark:text-primary leading-tight">
+                La belleza de la <br/>imperfección elegante.
+            </h2>
+            <div class="space-y-6 text-slate-600 dark:text-slate-400 text-lg leading-relaxed">
+                <p>
+                    Coletina es una pastelería artesanal donde cada dulce es preparado con ingredientes seleccionados y el cariño de nuestras manos expertas. Nos especializamos en crear experiencias dulces memorables, ya sea para celebraciones especiales o para endulzar tu día a día.
                 </p>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                    <!-- WhatsApp Card -->
-                    <a class="group flex flex-col items-center p-10 rounded-2xl border border-[#ead1cd] bg-background-light hover:border-primary transition-all duration-300 hover:shadow-xl dark:bg-background-dark dark:border-[#3d2a27]" href="https://wa.me/34912345678" target="_blank">
-                        <div class="size-16 rounded-full bg-green-100 flex items-center justify-center text-green-600 mb-6 group-hover:scale-110 transition-transform">
-                            <span class="material-symbols-outlined !text-4xl">chat</span>
-                        </div>
-                        <h3 class="text-2xl font-bold mb-2 dark:text-white">WhatsApp</h3>
-                        <p class="text-[#a15345] dark:text-gray-400">Escríbenos para pedidos personalizados y eventos.</p>
-                    </a>
-                    <!-- Instagram Card -->
-                    <a class="group flex flex-col items-center p-10 rounded-2xl border border-[#ead1cd] bg-background-light hover:border-primary transition-all duration-300 hover:shadow-xl dark:bg-background-dark dark:border-[#3d2a27]" href="https://instagram.com/Coletina" target="_blank">
-                        <div class="size-16 rounded-full bg-pink-100 flex items-center justify-center text-pink-600 mb-6 group-hover:scale-110 transition-transform">
-                            <span class="material-symbols-outlined !text-4xl">photo_camera</span>
-                        </div>
-                        <h3 class="text-2xl font-bold mb-2 dark:text-white">Instagram</h3>
-                        <p class="text-[#a15345] dark:text-gray-400">Síguenos en nuestro viaje dulce @Coletina</p>
-                    </a>
-                </div>
-            </div>
-        </section>
-    </main>
-    <!-- Footer -->
-    <footer class="bg-coletina-purpura text-white py-16 px-6 md:px-20">
-        <div class="max-w-[1200px] mx-auto">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 items-start text-center md:text-left">
-                <!-- Brand & Location -->
-                <div class="flex flex-col gap-4">
-                    <div class="flex items-center gap-3 justify-center md:justify-start">
-                        <div class="size-6 text-white">
-                            <span class="material-symbols-outlined text-2xl">cake</span>
-                        </div>
-                        <h2 class="text-2xl font-bold tracking-tight">Coletina Repostería</h2>
-                    </div>
-                    <p class="text-white/80 text-sm leading-relaxed max-w-xs mx-auto md:mx-0">
-                        Calle Dulce 123, Ciudad Pastel<br/>
-                        Abierto de Martes a Domingo<br/>
-                        9:00 AM - 8:00 PM
-                    </p>
-                </div>
-                <!-- Navigation Links -->
-                <div class="flex flex-col gap-4">
-                    <h4 class="font-bold uppercase tracking-widest text-xs opacity-70">Enlaces Rápidos</h4>
-                    <nav class="flex flex-col gap-2">
-                        <a class="text-white hover:text-primary transition-colors" href="#">Aviso de Privacidad</a>
-                        <a class="text-white hover:text-primary transition-colors" href="#">Términos de Servicio</a>
-                        <a class="text-white hover:text-primary transition-colors" href="#">Preguntas Frecuentes</a>
-                    </nav>
-                </div>
-                <!-- Social Links -->
-                <div class="flex flex-col gap-6">
-                    <h4 class="font-bold uppercase tracking-widest text-xs opacity-70">Encuéntranos</h4>
-                    <div class="flex justify-center md:justify-start gap-4">
-                        <a class="size-10 rounded-full border border-white/30 flex items-center justify-center hover:bg-white hover:text-coletina-purpura transition-all" href="#">
-                            <span class="material-symbols-outlined !text-xl">social_leaderboard</span>
-                        </a>
-                        <a class="size-10 rounded-full border border-white/30 flex items-center justify-center hover:bg-white hover:text-coletina-purpura transition-all" href="#">
-                            <span class="material-symbols-outlined !text-xl">share_reviews</span>
-                        </a>
-                        <a class="size-10 rounded-full border border-white/30 flex items-center justify-center hover:bg-white hover:text-coletina-purpura transition-all" href="#">
-                            <span class="material-symbols-outlined !text-xl">alternate_email</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="mt-16 pt-8 border-t border-white/10 text-center">
-                <p class="text-white/60 text-xs">
-                    © 2023 Coletina Repostería - Todos los derechos reservados. Diseñado con amor por lo dulce.
+                <p class="italic">
+                    "Creemos que el sabor no debe esconderse detrás de capas plásticas. En Coletina celebramos el glaze vibrante, la miga perfecta y el color que solo la naturaleza puede otorgar."
                 </p>
             </div>
         </div>
-    </footer>
-</div>
+    </div>
+</section>
+
+<!-- Values Section -->
+<section class="py-24 px-6 md:px-20 bg-primary/5">
+    <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16 space-y-4">
+            <div class="inline-flex items-center gap-2 text-primary">
+                <span class="h-px w-8 bg-primary"></span>
+                <span class="uppercase tracking-widest text-xs font-bold">Lo que nos define</span>
+                <span class="h-px w-8 bg-primary"></span>
+            </div>
+            <h2 class="font-display text-4xl md:text-5xl text-accent-wine dark:text-primary">Nuestros Valores</h2>
+            <p class="text-slate-500 max-w-xl mx-auto">Principios que guían cada creación que sale de nuestra cocina.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Value 1 -->
+            <div class="value-card bg-white dark:bg-background-dark rounded-2xl p-8 shadow-sm border border-primary/10">
+                <span class="material-symbols-outlined text-primary text-4xl mb-4 block">eco</span>
+                <h3 class="font-display text-xl text-accent-wine dark:text-primary mb-3">Ingredientes Naturales</h3>
+                <p class="text-sm text-slate-500 leading-relaxed">Frutos rojos, flores comestibles y cacao puro. Sin colorantes artificiales, nunca.</p>
+            </div>
+            <!-- Value 2 -->
+            <div class="value-card bg-white dark:bg-background-dark rounded-2xl p-8 shadow-sm border border-primary/10">
+                <span class="material-symbols-outlined text-primary text-4xl mb-4 block">handshake</span>
+                <h3 class="font-display text-xl text-accent-wine dark:text-primary mb-3">Hecho a Mano</h3>
+                <p class="text-sm text-slate-500 leading-relaxed">Cada pieza elaborada con atención y técnica. Sin líneas de producción ni atajos.</p>
+            </div>
+            <!-- Value 3 -->
+            <div class="value-card bg-white dark:bg-background-dark rounded-2xl p-8 shadow-sm border border-primary/10">
+                <span class="material-symbols-outlined text-primary text-4xl mb-4 block">star</span>
+                <h3 class="font-display text-xl text-accent-wine dark:text-primary mb-3">Calidad Artesanal</h3>
+                <p class="text-sm text-slate-500 leading-relaxed">Mantequillas artesanales y harinas seleccionadas para una experiencia táctil única.</p>
+            </div>
+            <!-- Value 4 -->
+            <div class="value-card bg-white dark:bg-background-dark rounded-2xl p-8 shadow-sm border border-primary/10">
+                <span class="material-symbols-outlined text-primary text-4xl mb-4 block">favorite</span>
+                <h3 class="font-display text-xl text-accent-wine dark:text-primary mb-3">Con Propósito</h3>
+                <p class="text-sm text-slate-500 leading-relaxed">Elaboramos bajo pedido para garantizar frescura y calidad en cada bocado que deleitas.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contacto" class="py-24 px-6 md:px-20 bg-background-light dark:bg-background-dark">
+    <div class="max-w-5xl mx-auto">
+        <div class="text-center mb-16 space-y-4">
+            <div class="inline-flex items-center gap-2 text-primary">
+                <span class="h-px w-8 bg-primary"></span>
+                <span class="uppercase tracking-widest text-xs font-bold">Hablemos</span>
+                <span class="h-px w-8 bg-primary"></span>
+            </div>
+            <h2 class="font-display text-4xl md:text-5xl text-accent-wine dark:text-primary">¿Hablemos de Postres?</h2>
+            <p class="text-slate-500 max-w-xl mx-auto">
+                Estamos listos para hacer realidad tus antojos. Para pedidos y consultas, contáctanos con al menos 48 horas de anticipación.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+            <!-- WhatsApp -->
+            <a class="contact-card group flex flex-col items-center p-10 rounded-2xl border border-primary/20 bg-white dark:bg-background-dark hover:border-primary hover:shadow-2xl" href="https://wa.me/526391333182" target="_blank">
+                <div class="size-20 rounded-full bg-green-50 border border-green-200 flex items-center justify-center text-green-600 mb-6 group-hover:scale-110 transition-transform shadow-sm">
+                    <span class="material-symbols-outlined text-4xl">chat</span>
+                </div>
+                <h3 class="font-display text-2xl text-accent-wine dark:text-primary mb-3">WhatsApp</h3>
+                <p class="text-slate-500 text-center leading-relaxed">Escríbenos directamente para pedidos personalizados y eventos especiales.</p>
+                <span class="mt-6 inline-flex items-center gap-2 text-primary text-sm font-semibold group-hover:gap-3 transition-all">
+                    Escribir ahora <span class="material-symbols-outlined text-base">arrow_forward</span>
+                </span>
+            </a>
+            <!-- Instagram -->
+            <a class="contact-card group flex flex-col items-center p-10 rounded-2xl border border-primary/20 bg-white dark:bg-background-dark hover:border-primary hover:shadow-2xl" href="https://instagram.com/Coletina" target="_blank">
+                <div class="size-20 rounded-full bg-pink-50 border border-pink-200 flex items-center justify-center text-pink-600 mb-6 group-hover:scale-110 transition-transform shadow-sm">
+                    <span class="material-symbols-outlined text-4xl">photo_camera</span>
+                </div>
+                <h3 class="font-display text-2xl text-accent-wine dark:text-primary mb-3">Instagram</h3>
+                <p class="text-slate-500 text-center leading-relaxed">Síguenos en nuestro viaje dulce y descubre las creaciones más recientes.</p>
+                <span class="mt-6 inline-flex items-center gap-2 text-primary text-sm font-semibold group-hover:gap-3 transition-all">
+                    @Coletina <span class="material-symbols-outlined text-base">arrow_forward</span>
+                </span>
+            </a>
+        </div>
+
+        <!-- Contact Details -->
+        <div class="bg-primary/5 rounded-2xl p-10 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+            <div class="space-y-3">
+                <span class="material-symbols-outlined text-primary text-3xl block">location_on</span>
+                <h4 class="font-display text-lg text-accent-wine dark:text-primary">Ubicación</h4>
+                <p class="text-sm text-slate-500">Chihuahua, Chihuahua, México</p>
+            </div>
+            <div class="space-y-3">
+                <span class="material-symbols-outlined text-primary text-3xl block">schedule</span>
+                <h4 class="font-display text-lg text-accent-wine dark:text-primary">Pedidos</h4>
+                <p class="text-sm text-slate-500">Bajo pedido con 48–72 hrs de anticipación</p>
+            </div>
+            <div class="space-y-3">
+                <span class="material-symbols-outlined text-primary text-3xl block">mail</span>
+                <h4 class="font-display text-lg text-accent-wine dark:text-primary">Email</h4>
+                <p class="text-sm text-slate-500">hello@coletina.mx</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-white dark:bg-background-dark border-t border-primary/10 py-16 px-6 md:px-20">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+        <div class="md:col-span-1 space-y-4">
+            <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-primary text-2xl">bakery_dining</span>
+                <span class="font-display text-xl font-bold text-accent-wine dark:text-primary">Coletina</span>
+            </div>
+            <p class="text-sm text-slate-500 leading-relaxed italic">Repostería honesta, hecha a mano en el corazón de Chihuahua, México.</p>
+        </div>
+        <div>
+            <h4 class="font-bold text-xs uppercase tracking-widest mb-6">Navegación</h4>
+            <ul class="space-y-4 text-sm text-slate-500">
+                <li><a class="hover:text-primary transition-colors" href="index.html">Inicio</a></li>
+                <li><a class="hover:text-primary transition-colors" href="menu.html">Menú</a></li>
+                <li><a class="hover:text-primary transition-colors" href="about.html">Nosotros</a></li>
+                <li><a class="hover:text-primary transition-colors" href="about.html#contacto">Contacto</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4 class="font-bold text-xs uppercase tracking-widest mb-6">Contacto</h4>
+            <ul class="space-y-4 text-sm text-slate-500">
+                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">location_on</span> Chihuahua, MX</li>
+                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">mail</span> hello@coletina.mx</li>
+                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">call</span> +52 (639) 133-3182</li>
+            </ul>
+        </div>
+        <div>
+            <h4 class="font-bold text-xs uppercase tracking-widest mb-6">Síguenos</h4>
+            <div class="flex gap-4">
+                <a class="size-10 rounded-full border border-primary/20 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all" href="#">
+                    <span class="material-symbols-outlined">photo_camera</span>
+                </a>
+                <a class="size-10 rounded-full border border-primary/20 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all" href="#">
+                    <span class="material-symbols-outlined">social_leaderboard</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="max-w-7xl mx-auto border-t border-primary/10 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-[10px] uppercase tracking-widest text-slate-400">© 2024 Coletina Repostería Poética. Todos los derechos reservados.</p>
+        <p class="text-[10px] uppercase tracking-widest text-slate-400">Diseño y Desarrollo por <a href="https://buenveneno.mx" target="_blank" class="hover:text-primary transition-colors">Buenveneno.mx</a></p>
+    </div>
+</footer>
+
 </body>
 </html>

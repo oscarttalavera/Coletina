@@ -1,37 +1,26 @@
 <!DOCTYPE html>
-<html class="light" lang="es">
-<head>
-    <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <title>Coletina Repostería - Home Page</title>
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-    <script id="tailwind-config">
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Noto+Sans:wght@300;400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
             theme: {
                 extend: {
                     colors: {
-                        // Color Principal: Chocolate/Borgoña Profundo
-                        // Uso: Logotipo, textos de lectura, botones principales
-                        "primary": "#491d25",
-                        // Color Secundario: Rosa Antiguo / Dusty Rose
-                        // Uso: Fondos decorativos, acentos, "pops" de color
-                        "secondary": "#e1b4a8",
-                        // Color Base: Crema / Off-White
-                        // Uso: Fondo general del sitio
-                        "background-light": "#f8f1ef",
-                        // Mantenemos un oscuro para modo noche si es necesario, 
-                        // o usamos el mismo borgoña muy oscuro.
-                        "background-dark": "#23120f",
-                        // Color para textos suaves o acentos neutros
-                        "cielo": "#e1b4a8", // Reemplazado por el Rosa Antiguo para coherencia
+                        "primary": "#d197a9", // Dusty Rose
+                        "accent-wine": "#5c1d2e",
+                        "background-light": "#fbf9fa",
+                        "background-dark": "#1d1518",
                     },
                     fontFamily: {
-                        "display": ["Plus Jakarta Sans", "sans-serif"],
-                        // Si decides agregar las fuentes del brief (Crushed/Montserrat), 
-                        // deberás importarlas en Google Fonts primero.
+                        "display": ["Noto Serif", "serif"],
+                        "sans": ["Noto Sans", "sans-serif"]
                     },
                     borderRadius: {
                         "DEFAULT": "0.25rem",
@@ -43,231 +32,229 @@
             },
         }
     </script>
-    <style>
-        body {
-            font-family: "Plus Jakarta Sans", sans-serif;
+<style>
+        .glass-nav {
+            background: rgba(251, 249, 250, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(209, 151, 169, 0.1);
         }
-        .text-brand-purple {
-            color: #5B5AA2;
-        }
-        .bg-cielo-soft {
-            background-color: #f1efef;
+        .text-shadow-sm {
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
     </style>
 </head>
-<body class="bg-background-light dark:bg-background-dark text-brand-purple">
-<!-- Top Navigation Bar -->
-<header class="sticky top-0 z-50 bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-primary/10 px-6 lg:px-40 py-4">
-    <div class="max-w-[1200px] mx-auto flex items-center justify-between">
-        <a href="index.html" class="flex items-center gap-3">
-            <img src="img/Coletinalogo.png" 
-                 alt="Coletina Repostería" 
-                 class="h-20 w-auto object-contain hover:opacity-90 transition-opacity" />
-        </a>
-        <nav class="hidden md:flex items-center gap-10">
-            <a class="text-primary text-sm font-semibold hover:text-secondary transition-colors" href="menu.html">Menú</a>
-            <a class="text-primary text-sm font-semibold hover:text-secondary transition-colors" href="about.html">Nosotros</a>
-            <a class="text-primary text-sm font-semibold hover:text-secondary transition-colors" href="about.html#contact">Contacto</a>
-        </nav>
-        <a href="menu.html" class="bg-primary hover:bg-primary/90 text-background-light px-6 py-2.5 rounded-lg text-sm font-bold shadow-sm transition-all transform hover:scale-105">
-            Pide Ahora
-        </a>
-    </div>
-</header>
-
-<main class="flex flex-col">
-    <!-- Hero Section -->
-    <section class="px-6 lg:px-40 py-12 lg:py-20 bg-background-light dark:bg-background-dark">
-        <div class="max-w-[1200px] mx-auto flex flex-col lg:flex-row gap-12 items-center">
-            <!-- Image Left -->
-            <div class="w-full lg:w-1/2">
-                <div class="relative group">
-                    <div class="absolute -inset-2 bg-primary/20 rounded-xl blur-lg group-hover:bg-primary/30 transition duration-500"></div>
-                    <div class="relative w-full aspect-[4/3] bg-center bg-cover rounded-xl shadow-2xl" data-alt="Gourmet chocolate cake with elegant frosting decorations" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCv-Wde87rLdyERK-jsOsc5TQLHWnKXtwvVK-FC_A89H2XUPcrD1b6qoSeOtfQj2EXbOIGIR6CK0IHjnj7td2z-RX7lYCWZ3YU2E3uc4JdjPJIk3bnO2rCDJl8j8L-y8ESZDnNoTPS8xwAZ-xG5MVMwAQZIAut_CpPaoXug0XNC0yTdq_D7oV-8OE8f9dFdKBkI4Zm1Ihys8BkTSug06axbpTmhO4gcbwWSdA_U4-B1obD3-m-bKnP8xqF69mudTwZN8gf_8Wd22Dk");'>
-                    </div>
-                </div>
-            </div>
-            <!-- Content Right -->
-            <div class="w-full lg:w-1/2 flex flex-col gap-6">
-                <div class="flex flex-col gap-4">
-                    <span class="inline-block px-3 py-1 bg-primary/10 text-primary text-xs font-bold uppercase tracking-widest rounded-full w-fit">
-                        Arte en cada bocado
-                    </span>
-                    <h2 class="text-brand-purple text-5xl lg:text-7xl font-extrabold leading-[1.1] tracking-tighter">
-                        Endulza tus <span class="text-primary">momentos</span>
-                    </h2>
-                    <p class="text-brand-purple/80 text-lg leading-relaxed max-w-md">
-                        En Coletina creemos que cada postre cuenta una historia. Elaboramos cada producto de forma artesanal, seleccionando ingredientes de calidad y prestando atención a cada detalle.
-                    </p>
-                </div>
-                <div class="flex gap-4">
-                    <a href="menu.html" class="bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-xl text-lg font-bold shadow-lg transition-all transform hover:translate-y-[-2px] inline-block text-center">
-                        Ver Menú
-                    </a>
-                    <a href="about.html" class="border-2 border-primary/20 hover:border-primary/40 text-brand-purple px-8 py-4 rounded-xl text-lg font-bold transition-all inline-block text-center">
-                        Personalizar
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Separation / Features Section (Cielo Background) -->
-    <section class="bg-cielo-soft dark:bg-background-dark/50 py-16 px-6 lg:px-40">
-        <div class="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="flex flex-col items-center text-center gap-4">
-                <div class="size-14 bg-white dark:bg-zinc-800 rounded-full flex items-center justify-center text-primary shadow-sm">
-                    <span class="material-symbols-outlined text-3xl">restaurant</span>
-                </div>
-                <h3 class="font-bold text-xl text-brand-purple">Ingredientes Premium</h3>
-                <p class="text-brand-purple/70 text-sm">Usamos solo la mejor mantequilla, cacao y frutas orgánicas.</p>
-            </div>
-            <div class="flex flex-col items-center text-center gap-4">
-                <div class="size-14 bg-white dark:bg-zinc-800 rounded-full flex items-center justify-center text-primary shadow-sm">
-                    <span class="material-symbols-outlined text-3xl">local_shipping</span>
-                </div>
-                <h3 class="font-bold text-xl text-brand-purple">Entrega a Domicilio</h3>
-                <p class="text-brand-purple/70 text-sm">Tus postres favoritos directamente hasta la puerta de tu casa.</p>
-            </div>
-            <div class="flex flex-col items-center text-center gap-4">
-                <div class="size-14 bg-white dark:bg-zinc-800 rounded-full flex items-center justify-center text-primary shadow-sm">
-                    <span class="material-symbols-outlined text-3xl">volunteer_activism</span>
-                </div>
-                <h3 class="font-bold text-xl text-brand-purple">Hecho a Mano</h3>
-                <p class="text-brand-purple/70 text-sm">Cada pedido es preparado artesanalmente bajo pedido.</p>
-            </div>
-        </div>
-    </section>
-    <!-- Categories Section -->
-    <section class="px-6 lg:px-40 py-20 bg-background-light dark:bg-background-dark">
-        <div class="max-w-[1200px] mx-auto">
-            <div class="flex justify-between items-end mb-12">
-                <div>
-                    <h2 class="text-brand-purple text-3xl font-black tracking-tight">Categorías Dulces</h2>
-                    <p class="text-brand-purple/60 mt-2">Nuestras especialidades más queridas</p>
-                </div>
-                <a class="text-primary font-bold flex items-center gap-2 hover:underline" href="menu.html">
-                    Ver todo el catálogo <span class="material-symbols-outlined">arrow_right_alt</span>
-                </a>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Category Card 1 -->
-                <a href="menu.html" class="group bg-white dark:bg-zinc-800 p-4 rounded-2xl shadow-sm border border-cielo/10 hover:shadow-xl transition-all duration-300 block">
-                    <div class="w-full aspect-square rounded-xl overflow-hidden mb-6">
-                        <div class="w-full h-full bg-center bg-cover transform group-hover:scale-110 transition-transform duration-500" data-alt="Beautifully tiered pink strawberry cake with fresh berries" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDC0DfEv0BEvozDWriOtTBvwWeN7G70JlK-5trSlkAFSqxWGEI1QnagD5UU8D6cyF3tE5ln1XwQgI6xKtOEAIleXEMga6VNQyl5iEhS8CJPZK3WXCy4ckVRFlyAtug0tcDhKDPmnbcI_rtTrRzmGu0KOu4RhTq_MEpd0FvO3ZGCtQVc9JUlwczKc4kfOVRJ3lT_1OcP5Jex9TMdZBm4OF8UHvvSr_hbSumDrAzJ-R6pw9lH-F8-0wGjFb_C9qzpE2fKSg-inbt2aL4");'>
-                        </div>
-                    </div>
-                    <div class="flex justify-between items-center">
-                        <div>
-                            <h3 class="text-brand-purple text-xl font-bold">Pasteles</h3>
-                            <p class="text-brand-purple/60 text-sm">Diseños únicos y personalizados</p>
-                        </div>
-                        <div class="size-10 bg-primary/10 text-primary rounded-full flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
-                            <span class="material-symbols-outlined">arrow_forward</span>
-                        </div>
-                    </div>
-                </a>
-                <!-- Category Card 2 -->
-                <a href="menu.html" class="group bg-white dark:bg-zinc-800 p-4 rounded-2xl shadow-sm border border-cielo/10 hover:shadow-xl transition-all duration-300 block">
-                    <div class="w-full aspect-square rounded-xl overflow-hidden mb-6">
-                        <div class="w-full h-full bg-center bg-cover transform group-hover:scale-110 transition-transform duration-500" data-alt="Freshly baked chocolate chip cookies on a cooling rack" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAr4bT5SrzZc9UPxji4_E0Ds3cRJl2aUqqE00hTYl0VWgs4lksDCKAz0DLZgMONAlZsxbz_xdoQD-FierWIb6n23hpQZsitfJuX6UwtoQIsUfb_ZGP5rcrjjrSIFKdbtMxd6gxzq6oFIbqFgz7tW2iHxAeZyUxHcHXe_t1mSClH3B_1XbPKiUXKtNA7oMIJ1tBnnkdYiQYCHzTKzWWco0BlSlzxkliD38o-_ZVhnCkw_MkiE6LVdaiADcWo5R-rl7MeRhrhfWatj44");'>
-                        </div>
-                    </div>
-                    <div class="flex justify-between items-center">
-                        <div>
-                            <h3 class="text-brand-purple text-xl font-bold">Galletas</h3>
-                            <p class="text-brand-purple/60 text-sm">Recién horneadas cada mañana</p>
-                        </div>
-                        <div class="size-10 bg-primary/10 text-primary rounded-full flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
-                            <span class="material-symbols-outlined">arrow_forward</span>
-                        </div>
-                    </div>
-                </a>
-                <!-- Category Card 3 -->
-                <a href="menu.html" class="group bg-white dark:bg-zinc-800 p-4 rounded-2xl shadow-sm border border-cielo/10 hover:shadow-xl transition-all duration-300 block">
-                    <div class="w-full aspect-square rounded-xl overflow-hidden mb-6">
-                        <div class="w-full h-full bg-center bg-cover transform group-hover:scale-110 transition-transform duration-500" data-alt="Assorted French pastries and croissants in a bakery window" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCJhUJygBbikLdaqEnkwQIdpsxCPq5KMFWdcbQgAZF5zoSNM_uTfi8nRnQDUVpZYsHsGM7fFgG5WpHj-GgWJlLlqUsDtdrA-8xoFVnmT6ZP5gUlq6lBB6GAX8YY3m6dGgJ1MfddbHiRQqxe1FpcVO13bSX_eiNmT7RLwV2eZGkH100bjt3fkC-T-PH5kNYkp9N1hJe7XQHldfg73Nn7zOTg3LoqorbpkKOtt8UfEtSK22duJRB6Ql1mNxm2nA6WzZHNh-FT3LIoIA4");'>
-                        </div>
-                    </div>
-                    <div class="flex justify-between items-center">
-                        <div>
-                            <h3 class="text-brand-purple text-xl font-bold">Repostería</h3>
-                            <p class="text-brand-purple/60 text-sm">Dulces tentaciones francesas</p>
-                        </div>
-                        <div class="size-10 bg-primary/10 text-primary rounded-full flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
-                            <span class="material-symbols-outlined">arrow_forward</span>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
-    <!-- CTA Section -->
-    <section class="px-6 lg:px-40 py-24 mb-20">
-        <div class="max-w-[1200px] mx-auto relative rounded-[2rem] overflow-hidden bg-primary/10 dark:bg-zinc-800/50 p-8 lg:p-20 text-center">
-            <div class="absolute top-0 right-0 p-10 opacity-10">
-                <span class="material-symbols-outlined text-[200px]">celebration</span>
-            </div>
-            <div class="relative z-10 flex flex-col items-center gap-8">
-                <h2 class="text-brand-purple text-4xl lg:text-5xl font-black max-w-[800px] leading-tight tracking-tight">
-                    ¿Tienes un evento especial próximamente?
-                </h2>
-                <p class="text-brand-purple/70 text-lg lg:text-xl max-w-2xl font-medium">
-                    Creamos pasteles personalizados para bodas, cumpleaños y celebraciones inolvidables. Déjanos ser parte de tu historia.
-                </p>
-                <div class="flex flex-wrap justify-center gap-4">
-                    <a href="about.html" class="bg-primary hover:bg-primary/90 text-white px-10 py-4 rounded-full text-lg font-bold shadow-lg transition-all flex items-center gap-2">
-                        <span class="material-symbols-outlined">mail</span>
-                        Contáctanos Ahora
-                    </a>
-                    <button class="bg-white hover:bg-zinc-50 text-brand-purple px-10 py-4 rounded-full text-lg font-bold shadow-sm transition-all border border-cielo/20">
-                        Ver Galería de Eventos
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
-</main>
-<!-- Footer -->
-<footer class="bg-background-light dark:bg-background-dark border-t border-cielo/10 px-6 lg:px-40 py-12">
-    <div class="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
-        <div class="flex flex-col gap-4">
-            <h4 class="text-brand-purple text-xl font-black">Coletina <span class="text-primary">Repostería</span></h4>
-            <p class="text-brand-purple/60 text-sm leading-relaxed">
-                Artesanía dulce para todos tus sentidos. Horneando felicidad en cada detalle.
+<body class="bg-background-light dark:bg-background-dark font-sans text-slate-900 dark:text-slate-100 antialiased">
+<!-- Floating Navigation -->
+<nav class="fixed top-6 left-1/2 -translate-x-1/2 z-50 w-[90%] max-w-5xl glass-nav rounded-full px-6 py-3 flex items-center justify-between shadow-lg">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-3xl">bakery_dining</span>
+<span class="font-display text-xl font-bold tracking-tight text-accent-wine dark:text-primary">Coletina</span>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#filosofia">Filosofía</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#coleccion">Colección</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#pedidos">Pedidos</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#contacto">Contacto</a>
+</div>
+<button class="bg-primary hover:bg-primary/90 text-white px-5 py-2 rounded-full text-sm font-bold transition-all shadow-md">
+            Consultar
+        </button>
+</nav>
+<!-- Hero Section -->
+<header class="relative h-screen w-full flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-accent-wine/30 z-10"></div>
+<img class="w-full h-full object-cover" data-alt="Gourmet chocolate cake with artisanal glaze and natural pigments" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCutTjCPL2Agnn4GqPVRgNLBLJPJozBW9lHnrItyUo7Y645MhERphPDRodo2Csj9nscUF0iRoXL-CvLAaiUUizbbHHa7aEOE3GnCw6lGTu4IL1-kMY-66R512gW2kT6W_ajMHyqamQsm7Q3gMKeNGdQujktf4wVGrB2mkg6xghM71XLybi6iEdOwng6ipMCAU9HiZUl9a-M72-Fl8ckyEW3DU-vWkD0xG1SAzEmDar0Pf1sIJ-GsJStCtXO4Fatu76BMdMkTEyc7wq0"/>
+</div>
+<div class="relative z-20 text-center px-4 max-w-4xl">
+<span class="inline-block text-white uppercase tracking-[0.3em] text-xs mb-4 font-semibold opacity-90">Alta Repostería en Chihuahua</span>
+<h1 class="font-display text-5xl md:text-8xl text-white mb-6 leading-tight drop-shadow-lg">
+                Repostería <br/><span class="italic font-normal">Poética y Artesanal</span>
+</h1>
+<p class="text-white/90 text-lg md:text-xl font-light mb-10 max-w-2xl mx-auto leading-relaxed">
+                Texturas honestas y sabores profundos. Sin fondant, solo la elegancia pura de los ingredientes naturales.
             </p>
-            <div class="flex gap-4 mt-2">
-                <a class="text-brand-purple hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">language</span></a>
-                <a class="text-brand-purple hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">camera_enhance</span></a>
-                <a class="text-brand-purple hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">chat</span></a>
-            </div>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<a class="bg-primary text-white px-8 py-4 rounded-full font-bold text-sm tracking-widest uppercase hover:scale-105 transition-transform shadow-xl" href="#coleccion">
+                    Explorar Colección
+                </a>
+<a class="bg-white/10 backdrop-blur-md border border-white/30 text-white px-8 py-4 rounded-full font-bold text-sm tracking-widest uppercase hover:bg-white/20 transition-all" href="#filosofia">
+                    Nuestra Esencia
+                </a>
+</div>
+</div>
+</header>
+<!-- Philosophy Section -->
+<section class="py-24 px-6 md:px-20 bg-background-light dark:bg-background-dark" id="filosofia">
+<div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+<div class="relative group">
+<div class="absolute -inset-4 bg-primary/10 rounded-xl -rotate-2 group-hover:rotate-0 transition-transform"></div>
+<img class="relative rounded-xl shadow-2xl z-10 w-full aspect-[4/5] object-cover" data-alt="Artistic closeup of cake crumb and creamy textures" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdoGScoD1z-zDuZX_XWgrFWrhc4oQOSo-ibwd3Lz5y3mCMwBGfHrBcPNLkVpmJKi8cH4g5eBjw1NAdpYpWeZ3x8FxyinGs2MclkwYDqRp1HtMes1FRFgs7tm82gysgMhsgrYRtXpEJ5OsF3LFQn7v86Huq2bayRr7pvS5urSB7jOBrgrldCUDyEOtH0pBSWABlr4-z8cToSHahJdJ8kTVUIg2U1p1ijNh6WGTCRhFNP89wJvZcOmT00gqg_WKxAbnZiTHGX4z-0Mhu"/>
+</div>
+<div class="space-y-8">
+<div class="inline-flex items-center gap-2 text-primary">
+<span class="h-px w-8 bg-primary"></span>
+<span class="uppercase tracking-widest text-xs font-bold">Sin Artificios</span>
+</div>
+<h2 class="font-display text-4xl md:text-5xl text-accent-wine dark:text-primary leading-tight">
+                    La belleza de la <br/>imperfección elegante.
+                </h2>
+<p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed italic">
+                    "Creemos que el sabor no debe esconderse detrás de capas plásticas. Nuestras creaciones celebran el glaze vibrante, la miga perfecta y el color que solo la naturaleza puede otorgar."
+                </p>
+<div class="grid grid-cols-2 gap-8 py-4">
+<div>
+<h4 class="font-display text-xl text-accent-wine dark:text-primary mb-2">Pigmentos Orgánicos</h4>
+<p class="text-sm text-slate-500">Frutos rojos, flores comestibles y cacao puro para dar color a la vida.</p>
+</div>
+<div>
+<h4 class="font-display text-xl text-accent-wine dark:text-primary mb-2">Texturas Reales</h4>
+<p class="text-sm text-slate-500">Mantequillas artesanales y harinas seleccionadas para una experiencia táctil.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Signature Collection -->
+<section class="py-24 px-6 md:px-20 bg-primary/5" id="coleccion">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-16 space-y-4">
+<h2 class="font-display text-4xl md:text-6xl text-accent-wine dark:text-primary">Signature Collection</h2>
+<p class="text-slate-500 max-w-xl mx-auto">Nuestra selección curada de piezas maestras, horneadas diariamente con intención y maestría.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+<!-- Item 1 -->
+<div class="group cursor-pointer">
+<div class="overflow-hidden rounded-2xl mb-4 relative aspect-square">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Ferrero Supreme cake with gold leaf and hazelnut texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzGSnbZ5uy2y8P-okQPgjQzSHbb6e2ZT9uDjnEp0caJQug1V0UZB7JBt0Y-dpG8ui_zmLVtyb-c9u9Nm31ak42ibch3dQWjv0NJIS6QcN6g3pH4E-zpc8RcoevUpILryweZbozNCv1iNqwqg0rzSvbXlNsEooM4NC-6Lpm-uaocRuvPD9AnJvAWdmsfW7PAYr9Vc-9Y3ei_JBPTWvJGKStPSPMfPFfKFQjxoSfnRoWGjD1s5iM5ClaSdtN8epuBAzRRkGlCqDBM9CV"/>
+<div class="absolute inset-0 bg-accent-wine/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="text-white border border-white px-6 py-2 rounded-full text-xs tracking-widest uppercase">Ver Detalle</span>
+</div>
+</div>
+<h3 class="font-display text-2xl text-accent-wine dark:text-primary mb-1">Ferrero Supreme</h3>
+<p class="text-slate-500 text-sm italic">Ganache de chocolate belga, avellanas tostadas y láminas de oro.</p>
+</div>
+<!-- Item 2 -->
+<div class="group cursor-pointer">
+<div class="overflow-hidden rounded-2xl mb-4 relative aspect-square">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Organic Red Velvet cake with natural beet coloring" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4XK6ZQovCRHL7blq02UVNHMiv23btOGT79VQpsv8I1BvEXmDZn7e0AQ8HQeFdibb8hJmdpOWzmbamQY1vCRW0u7sFtaI1f7jDhFhzqEz3v5wg7kMQtPmtqb7KWqa01cAVO0CmenKr3CFWmTpkR9C3m6PON03b5pCzd-xEu0RnYZ3yTko5WqfpI9NSo1fpFrpAbtc5WsyVs3vgDnvlTVcFJOf1LKLsP19PCe38O0Kc94zaBTTGnXBVSJ95Roe8ffIH-nsb3YWAqsd4"/>
+<div class="absolute inset-0 bg-accent-wine/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="text-white border border-white px-6 py-2 rounded-full text-xs tracking-widest uppercase">Ver Detalle</span>
+</div>
+</div>
+<h3 class="font-display text-2xl text-accent-wine dark:text-primary mb-1">Red Velvet Organic</h3>
+<p class="text-slate-500 text-sm italic">Color natural de betabel, frosting de queso crema artesanal.</p>
+</div>
+<!-- Item 3 -->
+<div class="group cursor-pointer">
+<div class="overflow-hidden rounded-2xl mb-4 relative aspect-square">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Spiced Carrot cake with walnuts and smooth glaze" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkuqTzQtiTBqMkDTJGmrwpuNlSf24uFiL6t1EDeLO1IonlzvZX2sj2wf8bVAuQYwCPlDAe1asPQz8kv0JYsBrQUPBzMz8nUgXQJi-LE7KOZEYKDiJY_DkBtQocKnRum4wn8MGHbLGjc6HkmgtWB0YPgJHlavQrmrn4CO8EnJnWqudUkrLudoWDniJ6fbWa2NKK5BKyDBliUEvGruMAmoeEY-ZdV5u9wUOQ4SrxezqIUv_nuA2tftzoDRgoaKwh6fl8thqVyOJm84o2"/>
+<div class="absolute inset-0 bg-accent-wine/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="text-white border border-white px-6 py-2 rounded-full text-xs tracking-widest uppercase">Ver Detalle</span>
+</div>
+</div>
+<h3 class="font-display text-2xl text-accent-wine dark:text-primary mb-1">Spiced Carrot</h3>
+<p class="text-slate-500 text-sm italic">Especias de oriente, nuez de Chihuahua y miel orgánica.</p>
+</div>
+<!-- Item 4 -->
+<div class="group cursor-pointer">
+<div class="overflow-hidden rounded-2xl mb-4 relative aspect-square">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Coconut Cloud donut or pastry with airy white flakes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDldGkX8xa1ssav3lH-kOFYwKJVAHmm4wIJatkaM-UPXdkP3b5LO_T4iTPThwSkgEtN0hjJG20Zf8_G72KI58Ma2MhzfAkuJrCWbOTN51GKKNJWe--uwVRkrnRa-dfbcRc1TfAwZp8EgfC2PFyUxGx2aW8WaBtBRAYVEFICmkYqd_sJVmaMb7I1u45VIiWpvDuqAO-J3Ayo8hiNROLyQ_9HA5T9HeIgOxs8cCT7uQcaPcZzhXWxOXz1_QdRxxCwsuuqLLvd5T3DqdNg"/>
+<div class="absolute inset-0 bg-accent-wine/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="text-white border border-white px-6 py-2 rounded-full text-xs tracking-widest uppercase">Ver Detalle</span>
+</div>
+</div>
+<h3 class="font-display text-2xl text-accent-wine dark:text-primary mb-1">Coconut Cloud</h3>
+<p class="text-slate-500 text-sm italic">Mousse de coco tierno, bizcocho aireado y ralladura fresca.</p>
+</div>
+<!-- Item 5 -->
+<div class="group cursor-pointer">
+<div class="overflow-hidden rounded-2xl mb-4 relative aspect-square">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Intense dark chocolate brownies with sea salt" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQBjG6R1psrYt485vxvJUDfDfbW8AcRHnTa7pvb9H_9cYTDKgN-if_kbzRPVd492YWKZigjDm5tHbrevgWwWBTHsOr2h74SpWbN9A-4MBnjvrgeZsTBg6HXcvDUQYLxP0poDoFjRfPjlzb5XGUXY5jBBpiEulGL1BAx0xWYNR323zMg7L7mLXoTwPS2VTway1OtQyyox7VR07U2tUjDDkMBRqnFS8hCbYOpu1V44Nv1UWLizT4nYASTppya2qmntO2JOgPZie3qxFj"/>
+<div class="absolute inset-0 bg-accent-wine/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="text-white border border-white px-6 py-2 rounded-full text-xs tracking-widest uppercase">Ver Detalle</span>
+</div>
+</div>
+<h3 class="font-display text-2xl text-accent-wine dark:text-primary mb-1">Intense Brownies</h3>
+<p class="text-slate-500 text-sm italic">Cacao al 70%, escamas de sal marina y centro fudge.</p>
+</div>
+<!-- Item 6 -->
+<div class="group cursor-pointer">
+<div class="overflow-hidden rounded-2xl mb-4 relative aspect-square">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Golden cinnamon rolls with light glaze swirl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAH3AZLTdY18Cx6EIVmVPOV_41ftMN9zy6l9zKA55FNMp-GciCG34CdpmkeJijXkz4E27h0jjFqKlggn6vsxl-f_4uq-LmTme0WWOvyhqeSHso1ItjlgsH1Kjf5aCmiX5CNuczRJwXBgKIRZcfpCuE0L1MSIfa2VnLkAzp0ECPC060gaKoLlApSctU4F7lF56e98mQx18QmxyLNJbY33CmM4EUNfairH4hCfSj8OyLBC-rxV7oOuItGQRwRuyTXAAzBGQj4X1MlDv21"/>
+<div class="absolute inset-0 bg-accent-wine/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="text-white border border-white px-6 py-2 rounded-full text-xs tracking-widest uppercase">Ver Detalle</span>
+</div>
+</div>
+<h3 class="font-display text-2xl text-accent-wine dark:text-primary mb-1">Cinnamon Rolls</h3>
+<p class="text-slate-500 text-sm italic">Masa brioche fermentada 24h, canela de Ceylán y vainilla.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Consultation CTA Section -->
+<section class="py-24 px-6 md:px-20" id="pedidos">
+<div class="max-w-4xl mx-auto bg-accent-wine text-white rounded-[2rem] p-12 md:p-20 text-center relative overflow-hidden shadow-2xl">
+<!-- Decorative circle -->
+<div class="absolute -top-24 -right-24 w-64 h-64 bg-primary/20 rounded-full blur-3xl"></div>
+<div class="absolute -bottom-24 -left-24 w-64 h-64 bg-primary/10 rounded-full blur-3xl"></div>
+<div class="relative z-10 space-y-8">
+<span class="material-symbols-outlined text-5xl text-primary">calendar_month</span>
+<h2 class="font-display text-4xl md:text-5xl leading-tight">Diseñemos algo inolvidable para tu evento</h2>
+<p class="text-white/80 text-lg max-w-xl mx-auto">
+                    Aceptamos pedidos personalizados con 72 horas de anticipación. Cada pieza es única, cada sabor es una historia.
+                </p>
+<div class="pt-6">
+<button class="bg-primary text-white px-10 py-5 rounded-full font-bold text-base tracking-widest uppercase hover:bg-white hover:text-accent-wine transition-all shadow-xl">
+                        Iniciar Consulta de Pedido
+                    </button>
+</div>
+<p class="text-white/60 text-sm">Disponibilidad limitada semanal para asegurar la calidad artesanal.</p>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-white dark:bg-background-dark border-t border-primary/10 py-16 px-6 md:px-20" id="contacto">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="md:col-span-1 space-y-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-2xl">bakery_dining</span>
+<span class="font-display text-xl font-bold text-accent-wine dark:text-primary">Coletina</span>
+</div>
+<p class="text-sm text-slate-500 leading-relaxed italic">Repostería honesta, hecha a mano en el corazón de Chihuahua, México.</p>
+</div>
+<div>
+<h4 class="font-bold text-xs uppercase tracking-widest mb-6">Navegación</h4>
+<ul class="space-y-4 text-sm text-slate-500">
+<li><a class="hover:text-primary" href="#">Colección Estacional</a></li>
+<li><a class="hover:text-primary" href="#">Nuestra Filosofía</a></li>
+<li><a class="hover:text-primary" href="#">Guía de Sabores</a></li>
+<li><a class="hover:text-primary" href="#">Preguntas Frecuentes</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-xs uppercase tracking-widest mb-6">Contacto</h4>
+<ul class="space-y-4 text-sm text-slate-500">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">location_on</span> Chihuahua, MX</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">mail</span> hello@coletina.mx</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">call</span> +52 (614) 123-4567</li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-xs uppercase tracking-widest mb-6">Síguenos</h4>
+<div class="flex gap-4">
+<a class="size-10 rounded-full border border-primary/20 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined">photo_camera</span>
+</a>
+<a class="size-10 rounded-full border border-primary/20 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined">social_leaderboard</span>
+</a>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto border-t border-primary/10 mt-16 pt-8 text-center text-[10px] uppercase tracking-widest text-slate-400">
+            © 2024 Coletina Repostería Poética. Todos los derechos reservados.
         </div>
-        <div class="flex flex-col gap-4">
-            <h5 class="text-brand-purple font-bold">Navegación</h5>
-            <ul class="text-brand-purple/70 text-sm flex flex-col gap-2">
-                <li><a class="hover:text-primary transition-colors" href="menu.html">Menú de Temporada</a></li>
-                <li><a class="hover:text-primary transition-colors" href="about.html">Sobre Nosotros</a></li>
-                <li><a class="hover:text-primary transition-colors" href="about.html#contact">Contacto</a></li>
-            </ul>
-        </div>
-        <div class="flex flex-col gap-4">
-            <h5 class="text-brand-purple font-bold">Contacto</h5>
-            <ul class="text-brand-purple/70 text-sm flex flex-col gap-2">
-                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">location_on</span> Calle de los Dulces, Ciudad</li>
-                <li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">mail</span> hola@coletina.com</li>
-            </ul>
-        </div>
-        <div class="flex flex-col gap-4">
-            <h5 class="text-brand-purple font-bold">Newsletter</h5>
-            <p class="text-brand-purple/60 text-sm">Recibe promociones y recetas exclusivas.</p>
-            <div class="flex flex-col gap-2 mt-2">
-                <input class="bg-white border-cielo/20 rounded-lg text-sm focus:ring-primary focus:border-primary px-4 py-2" placeholder="Tu email" type="email"/>
-                <button class="bg-primary text-white font-bold py-2 rounded-lg text-sm">Suscribirme</button>
-            </div>
-        </div>
-    </div>
-    <div class="max-w-[1200px] mx-auto mt-12 pt-8 border-t border-cielo/10 text-center">
-        <p class="text-brand-purple/40 text-xs">© 2024 Coletina Repostería. Todos los derechos reservados.</p>
-    </div>
 </footer>
-</body>
-</html>
+</body></html>
