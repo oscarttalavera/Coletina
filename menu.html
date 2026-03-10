@@ -58,15 +58,16 @@
 <nav class="fixed top-6 left-1/2 -translate-x-1/2 z-50 w-[90%] max-w-5xl glass-nav rounded-full px-6 py-3 flex items-center justify-between shadow-lg">
     <div class="flex items-center">
         <a href="index.html" class="flex items-center">
-            <img src="img/Coletinalogo.png" alt="Coletina" class="h-9 dark:hidden">
-            <img src="img/ColetinalogoBCO.png" alt="Coletina" class="h-9 hidden dark:block">
+            <img src="img/Coletinalogo.png" alt="Coletina" class="h-10 dark:hidden">
+            <img src="img/ColetinalogoBCO.png" alt="Coletina" class="h-10 hidden dark:block">
         </a>
     </div>
     <div class="hidden md:flex items-center gap-8">
+        <a class="text-sm font-medium hover:text-primary transition-colors" href="index.html#filosofia">Filosofía</a>
+        <a class="text-sm font-medium hover:text-primary transition-colors" href="index.html#coleccion">Colección</a>
         <a class="text-sm font-medium text-accent-wine font-bold border-b border-primary pb-0.5" href="menu.html">Menú</a>
         <a class="text-sm font-medium hover:text-primary transition-colors" href="about.html">Nosotros</a>
         <a class="text-sm font-medium hover:text-primary transition-colors" href="about.html#contacto">Contacto</a>
-        <a class="text-sm font-medium hover:text-primary transition-colors" href="index.html">Inicio</a>
     </div>
     <a href="https://wa.me/526391333182" target="_blank" class="bg-primary hover:bg-primary/90 text-white px-5 py-2 rounded-full text-sm font-bold transition-all shadow-md">
         Pedir Ahora
@@ -106,11 +107,8 @@
             <button onclick="filterCards('pastel', this)" class="filter-pill bg-primary/10 text-accent-wine flex items-center gap-2 px-6 py-2.5 rounded-full text-sm font-semibold transition-all border border-primary/20 hover:bg-primary/20 hover:scale-105">
                 <span class="material-symbols-outlined text-[18px]">cake</span> Pasteles
             </button>
-            <button onclick="filterCards('cupcake', this)" class="filter-pill bg-primary/10 text-accent-wine flex items-center gap-2 px-6 py-2.5 rounded-full text-sm font-semibold transition-all border border-primary/20 hover:bg-primary/20 hover:scale-105">
-                <span class="material-symbols-outlined text-[18px]">icecream</span> Cupcakes
-            </button>
-            <button onclick="filterCards('brownie', this)" class="filter-pill bg-primary/10 text-accent-wine flex items-center gap-2 px-6 py-2.5 rounded-full text-sm font-semibold transition-all border border-primary/20 hover:bg-primary/20 hover:scale-105">
-                <span class="material-symbols-outlined text-[18px]">cookie</span> Brownies &amp; Más
+            <button onclick="filterCards('especial', this)" class="filter-pill bg-primary/10 text-accent-wine flex items-center gap-2 px-6 py-2.5 rounded-full text-sm font-semibold transition-all border border-primary/20 hover:bg-primary/20 hover:scale-105">
+                <span class="material-symbols-outlined text-[18px]">cookie</span> Especialidades
             </button>
         </div>
     </div>
@@ -130,12 +128,11 @@
                 <h2 class="font-display text-3xl md:text-4xl text-accent-wine dark:text-primary">Pasteles</h2>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-                <!-- Pastel Zanahoria -->
+
+                <!-- Ferrero Chocolate -->
                 <div class="product-card group cursor-pointer" data-category="pastel">
                     <div class="overflow-hidden rounded-2xl mb-5 relative aspect-square shadow-lg">
-                        <div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
-                             style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDRwUcdaKr51gDIF-ocK3wQdcLTMY3DBqlOyv2KgV4p5FsbAI05zcXb4jv_pg2NdD1Uj2Z6oC-NHvvxqG5XSUg800PvWJig35WdqdxPb1HE-5_sA604vtDzY5D6cts9j-In8xiZfdLkfHeJEAowT5zKsGyYjnHw6wpKyuB2GZZIokihpPGOD5nCtakwszhjh95S-YbDVc6Qg8BCdO6TgO98CJHFsFWH7mYnp9EveMGdrfgFhrqiBQAqJVyEmPHasMq2oH9UR614dKg')">
-                        </div>
+                        <img src="img/pasteles/Ferrero.png" alt="Pastel Ferrero Chocolate" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                         <div class="absolute inset-0 bg-accent-wine/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-end justify-center pb-6">
                             <a href="https://wa.me/526391333182" target="_blank" class="bg-primary text-white px-6 py-2 rounded-full text-xs tracking-widest uppercase font-bold shadow-lg hover:bg-white hover:text-accent-wine transition-all">
                                 Pedir por WhatsApp
@@ -145,16 +142,14 @@
                     <div class="inline-flex items-center gap-1 text-primary mb-2">
                         <span class="uppercase tracking-widest text-[10px] font-bold">Signature</span>
                     </div>
-                    <h3 class="font-display text-2xl text-accent-wine dark:text-primary mb-1">Pastel de Zanahoria</h3>
-                    <p class="text-slate-500 text-sm italic">Bizcocho húmedo de zanahoria con nueces y betún casero de queso crema.</p>
+                    <h3 class="font-display text-2xl text-accent-wine dark:text-primary mb-1">Ferrero Chocolate</h3>
+                    <p class="text-slate-500 text-sm italic">Ganache de chocolate belga, avellanas tostadas y decoración inspirada en el clásico Ferrero.</p>
                 </div>
 
-                <!-- Chocoflan -->
+                <!-- Nube de Coco -->
                 <div class="product-card group cursor-pointer" data-category="pastel">
                     <div class="overflow-hidden rounded-2xl mb-5 relative aspect-square shadow-lg">
-                        <div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
-                             style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCxNgrZUF8u_wQat2MxPBjtE3rbVXqG78N3bf4_HzvACI_v3nySxXr2LF2CV3dTKqgZj7dsHBlD0jeNgOUAuAVdDJxI4vx0PRrSBbamRyKCcUvY14QcZ9vKl8DZsew3Z8ufZyRM2HgSyxDyhpMipvj2iOO_-h4BuFUoz7TOarMESPxw4oN7hNxedruqtc5biII2N9wNRL-ofAn17vdxzpap_Ohe8AtuFCKJZSxcHueXIsBTi2ta-YSTg2ahi_zB0NAOKEHOB0GxIiQ')">
-                        </div>
+                        <img src="img/pasteles/Coco.png" alt="Pastel Nube de Coco" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                         <div class="absolute inset-0 bg-accent-wine/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-end justify-center pb-6">
                             <a href="https://wa.me/526391333182" target="_blank" class="bg-primary text-white px-6 py-2 rounded-full text-xs tracking-widest uppercase font-bold shadow-lg hover:bg-white hover:text-accent-wine transition-all">
                                 Pedir por WhatsApp
@@ -162,14 +157,48 @@
                         </div>
                     </div>
                     <div class="inline-flex items-center gap-1 text-primary mb-2">
-                        <span class="uppercase tracking-widest text-[10px] font-bold">Tradicional</span>
+                        <span class="uppercase tracking-widest text-[10px] font-bold">Signature</span>
                     </div>
-                    <h3 class="font-display text-2xl text-accent-wine dark:text-primary mb-1">Chocoflan</h3>
-                    <p class="text-slate-500 text-sm italic">Bizcocho de chocolate y flan de vainilla, bañado en caramelo artesanal.</p>
+                    <h3 class="font-display text-2xl text-accent-wine dark:text-primary mb-1">Nube de Coco</h3>
+                    <p class="text-slate-500 text-sm italic">Mousse de coco tierno, bizcocho aireado y ralladura fresca de coco natural.</p>
+                </div>
+
+                <!-- Zanahoria -->
+                <div class="product-card group cursor-pointer" data-category="pastel">
+                    <div class="overflow-hidden rounded-2xl mb-5 relative aspect-square shadow-lg">
+                        <img src="img/pasteles/zanahoria.png" alt="Pastel de Zanahoria" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-accent-wine/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-end justify-center pb-6">
+                            <a href="https://wa.me/526391333182" target="_blank" class="bg-primary text-white px-6 py-2 rounded-full text-xs tracking-widest uppercase font-bold shadow-lg hover:bg-white hover:text-accent-wine transition-all">
+                                Pedir por WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                    <div class="inline-flex items-center gap-1 text-primary mb-2">
+                        <span class="uppercase tracking-widest text-[10px] font-bold">Clásico</span>
+                    </div>
+                    <h3 class="font-display text-2xl text-accent-wine dark:text-primary mb-1">Zanahoria</h3>
+                    <p class="text-slate-500 text-sm italic">Bizcocho húmedo de zanahoria con nueces y betún casero de queso crema.</p>
+                </div>
+
+                <!-- Vainilla -->
+                <div class="product-card group cursor-pointer" data-category="pastel">
+                    <div class="overflow-hidden rounded-2xl mb-5 relative aspect-square shadow-lg">
+                        <img src="img/pasteles/vainilla.png" alt="Pastel de Vainilla" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-accent-wine/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-end justify-center pb-6">
+                            <a href="https://wa.me/526391333182" target="_blank" class="bg-primary text-white px-6 py-2 rounded-full text-xs tracking-widest uppercase font-bold shadow-lg hover:bg-white hover:text-accent-wine transition-all">
+                                Pedir por WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                    <div class="inline-flex items-center gap-1 text-primary mb-2">
+                        <span class="uppercase tracking-widest text-[10px] font-bold">Clásico</span>
+                    </div>
+                    <h3 class="font-display text-2xl text-accent-wine dark:text-primary mb-1">Vainilla</h3>
+                    <p class="text-slate-500 text-sm italic">Esponjoso bizcocho de vainilla natural con betún sedoso y delicado aroma artesanal.</p>
                 </div>
 
                 <!-- Pasteles Personalizados CTA -->
-                <div class="product-card group cursor-pointer relative overflow-hidden rounded-2xl bg-accent-wine aspect-square shadow-lg flex items-center" data-category="pastel">
+                <div class="product-card group cursor-pointer relative overflow-hidden rounded-2xl bg-accent-wine aspect-square shadow-lg flex items-center md:col-span-2 lg:col-span-2" data-category="pastel">
                     <div class="absolute inset-0 bg-gradient-to-br from-accent-wine to-accent-wine/70"></div>
                     <div class="absolute -bottom-16 -right-16 w-64 h-64 bg-primary/20 rounded-full blur-2xl"></div>
                     <div class="relative z-10 p-8 space-y-4">
@@ -185,53 +214,21 @@
             </div>
         </div>
 
-        <!-- Section: Cupcakes -->
-        <div class="mb-16" id="section-cupcakes">
+        <!-- Section: Especialidades -->
+        <div class="mb-16" id="section-especiales">
             <div class="flex items-center gap-4 mb-10">
                 <div class="inline-flex items-center gap-2 text-primary">
                     <span class="h-px w-8 bg-primary"></span>
                     <span class="uppercase tracking-widest text-xs font-bold">Colección</span>
                 </div>
-                <h2 class="font-display text-3xl md:text-4xl text-accent-wine dark:text-primary">Cupcakes</h2>
+                <h2 class="font-display text-3xl md:text-4xl text-accent-wine dark:text-primary">Especialidades</h2>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-                <!-- Cupcakes Gourmet -->
-                <div class="product-card group cursor-pointer" data-category="cupcake">
-                    <div class="overflow-hidden rounded-2xl mb-5 relative aspect-square shadow-lg">
-                        <div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
-                             style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCMkrGajstslOgfq6S0jLdDy9cHbe8aIjr-7OoDjWaMQPRthszWmkAqlWXdgceZ2wCpGLPnLRYLFiEcU4z6O_Q4NRTSeZTQOgKQMYjShorMaZmUCdCULKRFENn2eDhT1Ef5VlMUSZO98BrHIxlra7GvZ3lQuKZ6HwYDVa65hlG1Df1GvuX05wIE2SINegy69AT7PnxDLDK5v4JV8KqAgLE4eNp82UsJT0QA_ZoRmB0XZSqRpaPkPWYz8u-DCc1qBxr3YuCJMEHbDNY')">
-                        </div>
-                        <div class="absolute inset-0 bg-accent-wine/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-end justify-center pb-6">
-                            <a href="https://wa.me/526391333182" target="_blank" class="bg-primary text-white px-6 py-2 rounded-full text-xs tracking-widest uppercase font-bold shadow-lg hover:bg-white hover:text-accent-wine transition-all">
-                                Pedir por WhatsApp
-                            </a>
-                        </div>
-                    </div>
-                    <div class="inline-flex items-center gap-1 text-primary mb-2">
-                        <span class="uppercase tracking-widest text-[10px] font-bold">Mínimo requerido</span>
-                    </div>
-                    <h3 class="font-display text-2xl text-accent-wine dark:text-primary mb-1">Cupcakes Gourmet</h3>
-                    <p class="text-slate-500 text-sm italic">Chocolate, Red Velvet, Fresa, Plátano-avena. Cobertura de betún o chantillí.</p>
-                </div>
-            </div>
-        </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
 
-        <!-- Section: Brownies & Más -->
-        <div class="mb-16" id="section-brownies">
-            <div class="flex items-center gap-4 mb-10">
-                <div class="inline-flex items-center gap-2 text-primary">
-                    <span class="h-px w-8 bg-primary"></span>
-                    <span class="uppercase tracking-widest text-xs font-bold">Colección</span>
-                </div>
-                <h2 class="font-display text-3xl md:text-4xl text-accent-wine dark:text-primary">Brownies &amp; Más</h2>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                 <!-- Brownies -->
-                <div class="product-card group cursor-pointer" data-category="brownie">
+                <div class="product-card group cursor-pointer" data-category="especial">
                     <div class="overflow-hidden rounded-2xl mb-5 relative aspect-square shadow-lg">
-                        <div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
-                             style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBbVvyHnW6PqVD8nVtI_4A3twxUeCpOkitt1_woNh_xH8daReSDd3i_KuURKDxbDbyumy2XoU0_LRWkUaQQpAuzv9ZcAKc8rmUSVnbkWaTqEwa4lZntlnrbjAjFC-Ql9TJIPBV1a3xPyO6as3r2QzsxGUFOlpeRN5sFC0lIEXHYEsYXG0xokAfmtYBMA1B5bhsXremSdX1Ne3Xab26ep5bztK7BfkJtKVnDn-F_F3qq-9zfUjQJDgM9nbZuWzcf21J_ink4HSbERgM')">
-                        </div>
+                        <img src="img/pasteles/brownies.png" alt="Brownies Artesanales" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                         <div class="absolute inset-0 bg-accent-wine/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-end justify-center pb-6">
                             <a href="https://wa.me/526391333182" target="_blank" class="bg-primary text-white px-6 py-2 rounded-full text-xs tracking-widest uppercase font-bold shadow-lg hover:bg-white hover:text-accent-wine transition-all">
                                 Pedir por WhatsApp
@@ -241,16 +238,14 @@
                     <div class="inline-flex items-center gap-1 text-primary mb-2">
                         <span class="uppercase tracking-widest text-[10px] font-bold">Bajo pedido</span>
                     </div>
-                    <h3 class="font-display text-2xl text-accent-wine dark:text-primary mb-1">Brownies Artesanales</h3>
+                    <h3 class="font-display text-2xl text-accent-wine dark:text-primary mb-1">Brownies</h3>
                     <p class="text-slate-500 text-sm italic">Textura perfecta entre crujiente y húmeda. Con chispas, nuez o almendras tostadas.</p>
                 </div>
 
                 <!-- Roles de Canela -->
-                <div class="product-card group cursor-pointer" data-category="brownie">
+                <div class="product-card group cursor-pointer" data-category="especial">
                     <div class="overflow-hidden rounded-2xl mb-5 relative aspect-square shadow-lg">
-                        <div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
-                             style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBVlAX4Kl-vuo8lxnQZBhJxsd6oeLkSzJgkFr1euZfu1dyaDaWLt32xcP64FBsQYF0ngmdirb87QTiGsNcUIh4jcd1zADeA42JsqyAY5h7A4QKLvtENlTQphbJT_gc2mxS3ZXZcMfZ8isS1vKEEyCLz6j7I_MCMkTbnwgXustFQzJUOVzc2-IAcZxhbdKNLW1f0sW13jnT4fTiy-VBL2Ktzw8ebilNFMRYxxkJxdUhygIBCTuThe-SyIaTQjcg6bBVTqTjmOdA3a2I')">
-                        </div>
+                        <img src="img/pasteles/roles.png" alt="Roles de Canela" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                         <div class="absolute inset-0 bg-accent-wine/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-end justify-center pb-6">
                             <a href="https://wa.me/526391333182" target="_blank" class="bg-primary text-white px-6 py-2 rounded-full text-xs tracking-widest uppercase font-bold shadow-lg hover:bg-white hover:text-accent-wine transition-all">
                                 Pedir por WhatsApp
@@ -261,26 +256,7 @@
                         <span class="uppercase tracking-widest text-[10px] font-bold">Bajo pedido</span>
                     </div>
                     <h3 class="font-display text-2xl text-accent-wine dark:text-primary mb-1">Roles de Canela</h3>
-                    <p class="text-slate-500 text-sm italic">Masa brioche fermentada 24h, canela de Ceylán y glaseado dulce.</p>
-                </div>
-
-                <!-- Galletas -->
-                <div class="product-card group cursor-pointer" data-category="brownie">
-                    <div class="overflow-hidden rounded-2xl mb-5 relative aspect-square shadow-lg">
-                        <div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
-                             style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCOPXc-mgmx-_h533-XRt2NZZcBO1cadVeNe5_goKSnSb0TNiRiMooorfaf-NqOKxZjQIeVWe9dxyJwrHBNdEc8TUqyTjgYKWgPPXW9ruUxISNJAy9pER1nm9AyhzS8Hjj3Ak_B0LnfdjICsswNcilFGSVkYWfGiWNoA5DVknsQ4nMwR3N2M-2Pv3MTAMuPfpSrwjs4l3L2sef6C5hOaSO9uOikClzO8nfdAu0ZWn1DvCy9WtnCuoWab4T-CJ4-le800umDYCa9MTI')">
-                        </div>
-                        <div class="absolute inset-0 bg-accent-wine/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-end justify-center pb-6">
-                            <a href="https://wa.me/526391333182" target="_blank" class="bg-primary text-white px-6 py-2 rounded-full text-xs tracking-widest uppercase font-bold shadow-lg hover:bg-white hover:text-accent-wine transition-all">
-                                Pedir por WhatsApp
-                            </a>
-                        </div>
-                    </div>
-                    <div class="inline-flex items-center gap-1 text-primary mb-2">
-                        <span class="uppercase tracking-widest text-[10px] font-bold">Bajo pedido</span>
-                    </div>
-                    <h3 class="font-display text-2xl text-accent-wine dark:text-primary mb-1">Galletas Chispas</h3>
-                    <p class="text-slate-500 text-sm italic">Crujientes por fuera, suaves por dentro, con generosas chispas de chocolate.</p>
+                    <p class="text-slate-500 text-sm italic">Masa brioche fermentada 24h, canela de Ceylán y glaseado dulce artesanal.</p>
                 </div>
             </div>
         </div>
@@ -314,8 +290,8 @@
     <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
         <div class="md:col-span-1 space-y-4">
             <div class="flex items-center">
-                <img src="img/Coletinalogo.png" alt="Coletina" class="h-8 dark:hidden">
-                <img src="img/ColetinalogoBCO.png" alt="Coletina" class="h-8 hidden dark:block">
+                <img src="img/Coletinalogo.png" alt="Coletina" class="h-16 dark:hidden">
+                <img src="img/ColetinalogoBCO.png" alt="Coletina" class="h-16 hidden dark:block">
             </div>
             <p class="text-sm text-slate-500 leading-relaxed italic">Repostería honesta, hecha a mano en el corazón de Chihuahua, México.</p>
         </div>
@@ -349,7 +325,7 @@
         </div>
     </div>
     <div class="max-w-7xl mx-auto border-t border-primary/10 mt-16 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-        <p class="text-[10px] uppercase tracking-widest text-slate-400">© 2024 Coletina Repostería Poética. Todos los derechos reservados.</p>
+        <p class="text-[10px] uppercase tracking-widest text-slate-400">© 2026 Coletina Repostería. Todos los derechos reservados.</p>
         <p class="text-[10px] uppercase tracking-widest text-slate-400">Diseño y Desarrollo por <a href="https://buenveneno.mx" target="_blank" class="hover:text-primary transition-colors">Buenveneno.mx</a></p>
     </div>
 </footer>
@@ -367,13 +343,12 @@
         btn.classList.remove('bg-primary/10', 'text-accent-wine');
 
         const sections = {
-            all: ['section-pasteles', 'section-cupcakes', 'section-brownies'],
+            all: ['section-pasteles', 'section-especiales'],
             pastel: ['section-pasteles'],
-            cupcake: ['section-cupcakes'],
-            brownie: ['section-brownies'],
+            especial: ['section-especiales'],
         };
 
-        ['section-pasteles', 'section-cupcakes', 'section-brownies'].forEach(id => {
+        ['section-pasteles', 'section-especiales'].forEach(id => {
             const el = document.getElementById(id);
             if (category === 'all' || sections[category].includes(id)) {
                 el.style.display = '';
